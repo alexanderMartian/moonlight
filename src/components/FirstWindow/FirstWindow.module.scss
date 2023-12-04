@@ -1,0 +1,53 @@
+.mainWrapper {
+  background-image: url("Images/MainWrapper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 40px 100px 0 100px;
+  overflow: hidden;
+}
+
+.picturesWrapper{
+  margin: 0 40px;
+  position: relative;
+
+  & .dogPicture {
+    position: absolute;
+    top: 50px;
+    left: 45px;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .batPricture {
+    position: absolute;
+    top: 50px;
+    right: 45px;
+
+    & img {
+      width: 100%;
+    }
+  }
+  & .picturesTitle {
+    position: absolute;
+    top: 37vh;
+    left: 50%;
+    transform:translate(-50%, -50%);   
+    color: #FFF;
+    text-shadow: 0px 0px 129.528px #419BC8, 0px 0px 259.056px #419BC8, 0px 0px 906.696px #419BC8, 0px 0px 1813.392px #419BC8, 0px 0px 3108.672px #419BC8, 0px 0px 5440.176px #419BC8;
+    font-size: 400px;
+    font-weight: 500;
+  }
+
+  & .gunPicture {
+    position: absolute;
+    left: 35%;
+    top: -30px;
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
