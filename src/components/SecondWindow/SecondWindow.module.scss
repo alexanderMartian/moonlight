@@ -1,0 +1,15 @@
+.mainWrapper {
+  background-image: url("Images/MainWrapper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 40px 100px 0 100px;
+  overflow: hidden;
+}
+
+.videoWrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
