@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
   padding: 40px 100px 0 100px;
   overflow: hidden;
 }
@@ -13,7 +14,7 @@
 
   & .dogPicture {
     position: absolute;
-    top: 50px;
+    top: 10px;
     left: 45px;
 
     & img {
@@ -23,8 +24,8 @@
 
   & .batPricture {
     position: absolute;
-    top: 50px;
-    right: 45px;
+    top: 10px;
+    right: 50px;
 
     & img {
       width: 100%;
@@ -43,8 +44,8 @@
 
   & .gunPicture {
     position: absolute;
-    left: 35%;
-    top: -30px;
+    left: 34%;
+    top: -72px;
 
     & > img {
       width: 100%;
@@ -54,6 +55,6 @@
 
 .footer {
   position: absolute;
-  left: 47%;
-  top: 86vh;
+  left: 46%;
+  top: 83vh;
 }
