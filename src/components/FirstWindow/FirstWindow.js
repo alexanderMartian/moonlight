@@ -9,18 +9,18 @@ const FirstWindow = () => {
   return (
     <div className={styles.mainWrapper}>
       <Header/>
-      <div className={styles.picturesWrapper}>
+      <main className={styles.picturesWrapper}>
         <div className={styles.dogPicture}>
             <img src={MainPicturesWithDog} alt="MainPicturesWithDog"/>
         </div>
         <div className={styles.batPricture}>
             <img src={MainPicturesWithBita} alt="MainPicturesWithBita"/>
         </div>
-        <p className={styles.picturesTitle}>Moonlight</p>
+        <h1 className={styles.picturesTitle}>Moonlight</h1>
         <div className={styles.gunPicture}>
           <img src={MainPicturesWithGun} alt="MainPicturesWithGun"/>
         </div>
-      </div>
+      </main>
     </div>
   );
 };
