@@ -7,6 +7,8 @@ import MainPicturesWithGun from './Images/MainPicturesWithGun.png';
 const FirstWindow = () => {
 
   return (
+    <div className={styles.mainWrapper}>
+      <Header/>
       <main className={styles.picturesWrapper}>
         <div className={styles.dogPicture}>
             <img src={MainPicturesWithDog} alt="MainPicturesWithDog"/>
@@ -26,6 +28,7 @@ const FirstWindow = () => {
           </svg>
         </footer>
       </main>
+    </div>
   );
 };
 
