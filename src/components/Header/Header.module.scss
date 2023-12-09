@@ -1,52 +1,152 @@
-.headerWrapper {
+@import '../../styles/variables.scss';
+
+.wrapper {
   display: flex;
   justify-content: space-between;
+  position: absolute !important;
+  top: 0;
+  background-size: cover;
+  padding: 20px 20px 100vh 20px;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
 
-  & div:first-child {
+  & .logoMenuWrapper {
     display: flex;
     align-items: center;
 
-    & > a {
+    & .logoMenuLink {
+      margin-left: 20px;
 
       & > p {
         color: #FFF;
-        font-size: 35px;
+        font-family: Oswald;
+        font-size: 27px;
         font-weight: 500;
       }
     }
   }
 
-  & div:last-child {
+  & .none {
+    display: none;
+  }
+
+  & .navigation {
     display: flex;
+    align-items: center;
+    position: absolute;
+    left: 5px;
+    top: 75px;
 
-    & .firstLink {
+    & .navigationList {
+      display: none;
+    }
+
+    & .navigationListMobile {
       display: flex;
-      align-items: center;
-      margin-right: 10px;
-
-      & > div {
-        margin-right: 5px;
+      flex-direction: column;
+      align-items: flex-start;
+      list-style-type: none;
+      background: #8f8f89e6;
+      z-index: 1;
+  
+      & .navigationItem {
+        width: 100%;
+        border-bottom: #FFF solid 1px;
+        position: relative;
+        align-items: center;
+        display: flex;
+  
+        & .navigationItemLink {
+          color: #FFF;
+          padding: 22px 150px 22px 15px;
+          margin: 2px;
+          font-size: 18px;
+          display: block;
+          cursor: pointer;
+  
+          & > div {
+            // display: flex;
+            // margin-right: 5px;
+            display: none;
+          }
+    
+          & > p {
+            // color: rgba(255, 255, 255, 0.70);
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
       }
+    }
+  }
+}
 
-      & > p {
-        color: rgba(255, 255, 255, 0.70);
-        font-size: 20px;
-        font-weight: 500;
+@media (min-width: $tablet) {
+  
+  .wrapper {
+    padding: 30px 50px 0 50px;
+  
+    & .logoMenuWrapper {
+  
+      & .menu {
+        display: none;
+      }
+  
+      & .logoMenuLink {
+        margin-left: 0;
+
+        & > p {
+          font-size: 30px;
+        }
       }
     }
 
-    & .secondLink {
-      display: flex;
-      align-items: center;
-
-      & > div {
-        margin-right: 5px;
+    & .navigation {
+      position: static;
+      
+      & .navigationList {
+        display: flex;
+        list-style-type: none;
+        
+        & > li:first-child {
+          margin-right: 10px;
+        }
+    
+        & .navigationItem {
+    
+          & .navigationItemLink {
+            display: flex;
+            align-items: center;
+    
+            & > div {
+              display: flex;
+              margin-right: 5px;
+            }
+      
+            & > p {
+              color: rgba(255, 255, 255, 0.70);
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+        }
       }
+    }  
+  }
+}
 
-      & > p {
-        color: rgba(255, 255, 255, 0.70);
-        font-size: 20px;
-        font-weight: 500;
+@media (min-width: $desktop-big) {
+  .wrapper {
+    padding: 40px 100px 0 100px;
+
+    & .logoMenuWrapper {
+  
+      & .logoMenuLink {
+
+        & > p {
+          font-size: 35px;
+        }
       }
     }
   }

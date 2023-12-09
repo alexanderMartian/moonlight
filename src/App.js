@@ -5,10 +5,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Mousewheel, Pagination } from 'swiper/modules';
 import FirstWindow from './components/FirstWindow/FirstWindow';
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <>
+    <div className="wrapper">
+      <Header/>
       <Swiper
         direction={'vertical'}
         slidesPerView={1}
@@ -26,7 +28,7 @@ function App() {
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
 
