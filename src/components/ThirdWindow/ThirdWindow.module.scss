@@ -1,23 +1,24 @@
+@import '../../styles/variables.scss';
+
 .mainWrapper {
   background-image: url("Images/MainWrapper.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  padding: 40px 100px 0 100px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .startGameWrapper {
-
 }
 
 .stepsWrapper {
   display: flex;
-  justify-content: space-around;
-  margin-top: 120px;
+  flex-direction: column;
+  padding: 0 15px;
 }
 
 .startGameBlock {
+  margin: 120px 50px 40px;
 
   & > h1 {
     color: #FFF;
@@ -27,10 +28,185 @@
   }
 
   & > p {
+    display: none;
     color: #FFF;
     text-align: center;
     font-family: Nunito;
     font-size: 20px;
     font-weight: 400;
   }
+}
+
+.footer {
+  margin: 20px;
+  color: rgba(255, 255, 255, 0.50);
+
+  & p {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+
+  & a {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.50);
+  }
+}
+
+@media (min-width: $tablet) { 
+
+  .mainWrapper {
+
+  }
+  
+  .startGameWrapper {
+  
+  }
+  
+  .stepsWrapper {
+
+  }
+  
+  .startGameBlock {
+  
+    & > h1 {
+
+    }
+  
+    & > p {
+
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    & p {
+      width: 30%;
+    }
+  
+    & a {
+
+    }
+  }
+}
+
+@media (min-width: $tablet-max) { 
+
+  .mainWrapper {
+
+  }
+  
+  .startGameWrapper {
+  
+  }
+  
+  .stepsWrapper {
+    
+
+  }
+  
+  .startGameBlock {
+  
+    & > h1 {
+      margin-bottom: 25px;
+    }
+  
+    & > p {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: $desktop) { 
+
+  .mainWrapper {
+
+  }
+  
+  .startGameWrapper {
+  
+  }
+  
+  .stepsWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .startGameBlock {
+
+  
+    & > h1 {
+
+    }
+  
+    & > p {
+
+    }
+  }
+
+  .footer {
+
+  
+    & p {
+
+    }
+  
+    & a {
+
+    }
+  }
+}
+
+@media (min-width: $desktop-big) { 
+
+  .mainWrapper {
+
+  }
+  
+  .startGameWrapper {
+  
+  }
+  
+  .stepsWrapper {
+
+  }
+  
+  .startGameBlock {
+  
+    & > h1 {
+
+    }
+  
+    & > p {
+
+    }
+  }
+}
+
+@media (min-width: $desktop-max) { 
+
+  .mainWrapper {
+
+  }
+  
+  .startGameWrapper {
+  
+  }
+  
+  .stepsWrapper {
+
+  }
+  
+  .startGameBlock {
+  
+    & > h1 {
+
+    }
+  
+    & > p {
+
+    }
+  } 
 }

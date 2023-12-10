@@ -6,13 +6,16 @@ import 'swiper/css/pagination';
 import { Mousewheel, Pagination } from 'swiper/modules';
 import FirstWindow from './components/FirstWindow/FirstWindow';
 import SecondWindow from './components/SecondWindow/SecondWindow';
+import ThirdWindow from './components/ThirdWindow/ThirdWindow';
+
 import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="wrapper">
       <Header/>
-      <Swiper
+      <ThirdWindow/>
+      {/* <Swiper
         direction={'vertical'}
         slidesPerView={1}
         spaceBetween={30}
@@ -29,8 +32,10 @@ function App() {
         <SwiperSlide>
           <SecondWindow/>
         </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-      </Swiper>
+        <SwiperSlide>
+          <ThirdWindow/>
+        </SwiperSlide>
+      </Swiper> */}
     </div>
   );
 }

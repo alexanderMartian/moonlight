@@ -1,5 +1,77 @@
-.mainWrapper {
-  width: 430px;
-  height: 466px;
-  background-color: #11273B;
+@import '../../styles/variables.scss';
+
+.wrapper {
+  border-radius: 7px;
+  background: #0B1D2D;
+  margin: 10px 0 10px;
+  color: #FFF;
+  cursor: pointer;
+
+  &  > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    
+    & h2 {
+      font-size: 46px;
+
+      & .stepQuantity {
+        color: #419BC8;
+      }
+    }
+
+    & .imagesWrapper {
+      
+    }
+  }
+
+  & .text {
+    padding: 0 20px 80px;
+    font-size: 20px;
+  }
+
+  & .action {
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 7px;
+    background: #11273B;
+  }
+}
+
+@media (min-width: $tablet) { 
+  .wrapper {
+
+  }
+
+}
+
+@media (min-width: $tablet-max) { 
+  .wrapper {
+
+  }
+
+}
+
+@media (min-width: $desktop) { 
+  .wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-big) { 
+  .wrapper {
+
+  }
+
+}
+
+@media (min-width: $desktop-max) { 
+  .wrapper {
+
+  }
+
 }
