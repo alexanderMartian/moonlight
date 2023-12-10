@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import styles from './StartGameItem.module.scss';
-import imgB from "../ThirdWindow/Images/Step_1.png"
 
 const StartGameItem = ({item}) => {
 
@@ -17,7 +16,6 @@ const StartGameItem = ({item}) => {
         <div className={styles.imagesWrapper}>
           {img}
         </div>
-        {/* <img src={imgB}></img> */}
       </div>
       <p className={styles.text}>{text}</p>
       <p className={styles.action}>{action}</p>
