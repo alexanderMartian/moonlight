@@ -6,6 +6,9 @@
   background-size: cover;
   height: 100vh;
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .startGameWrapper {
@@ -141,6 +144,7 @@
   .stepsWrapper {
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 100px;
   }
   
   .startGameBlock {
@@ -182,7 +186,7 @@
   }
   
   .stepsWrapper {
-
+    padding: 0 200px;
   }
   
   .startGameBlock {
@@ -194,7 +198,7 @@
     & > div {
     
       & > p {
-        width: 60%;
+        width: 45%;
       }
     }
   }
@@ -211,7 +215,7 @@
   }
   
   .stepsWrapper {
-
+    padding: 0 250px;
   }
   
   .startGameBlock {
