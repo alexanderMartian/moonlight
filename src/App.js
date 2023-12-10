@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/styles.scss';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Mousewheel, Pagination } from 'swiper/modules';
+import FirstWindow from './components/FirstWindow/FirstWindow';
+import SecondWindow from './components/SecondWindow/SecondWindow';
+import ThirdWindow from './components/ThirdWindow/ThirdWindow';
+
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Header/>
+      <Swiper
+        direction={'vertical'}
+        slidesPerView={1}
+        spaceBetween={30}
+        mousewheel={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Mousewheel, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <FirstWindow/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <SecondWindow/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ThirdWindow/>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }

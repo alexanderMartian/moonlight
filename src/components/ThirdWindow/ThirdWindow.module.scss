@@ -1,0 +1,243 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Oswald:wght@500;600;700&display=swap');
+
+.mainWrapper {
+  background-image: url("Images/MainWrapper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.startGameWrapper {
+}
+
+.stepsWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.startGameBlock {
+  margin: 120px 50px 40px;
+
+  & > h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  & > div {
+    display: none;
+    
+    & > p {
+      color: #FFF;
+      font-size: 20px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+    }
+  }
+}
+
+.footer {
+  margin: 20px;
+  color: rgba(255, 255, 255, 0.50);
+
+  & p {
+    font-size: 13px;
+    margin: 10px 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+  }
+
+  & a {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: $tablet) { 
+
+  .mainWrapper {
+
+  }
+  
+  .startGameWrapper {
+  
+  }
+  
+  .stepsWrapper {
+
+  }
+  
+  .startGameBlock {
+  
+    & > h1 {
+
+    }
+  
+    & > div {
+    
+      & > p {
+
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    & p {
+      width: 30%;
+    }
+  
+    & a {
+
+    }
+  }
+}
+
+@media (min-width: $tablet-max) { 
+
+  .mainWrapper {
+
+  }
+  
+  .startGameWrapper {
+  
+  }
+  
+  .stepsWrapper {
+    
+
+  }
+  
+  .startGameBlock {
+  
+    & > h1 {
+      margin-bottom: 25px;
+    }
+  
+    & > div {
+      display: flex;
+      justify-content: center;
+
+      & > p {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) { 
+
+  .mainWrapper {
+
+  }
+  
+  .startGameWrapper {
+  
+  }
+  
+  .stepsWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+  
+  .startGameBlock {
+
+  
+    & > h1 {
+
+    }
+  
+    & > div {
+    
+      & > p {
+        width: 70%;
+      }
+    }
+  }
+
+  .footer {
+
+  
+    & p {
+
+    }
+  
+    & a {
+
+    }
+  }
+}
+
+@media (min-width: $desktop-big) { 
+
+  .mainWrapper {
+
+  }
+  
+  .startGameWrapper {
+  
+  }
+  
+  .stepsWrapper {
+    padding: 0 200px;
+  }
+  
+  .startGameBlock {
+  
+    & > h1 {
+
+    }
+  
+    & > div {
+    
+      & > p {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-max) { 
+
+  .mainWrapper {
+
+  }
+  
+  .startGameWrapper {
+  
+  }
+  
+  .stepsWrapper {
+    padding: 0 250px;
+  }
+  
+  .startGameBlock {
+  
+    & > h1 {
+
+    }
+  
+    & > div {
+    
+      & > p {
+
+      }
+    }
+  } 
+}
