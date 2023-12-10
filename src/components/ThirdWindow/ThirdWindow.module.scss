@@ -1,4 +1,6 @@
 @import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Oswald:wght@500;600;700&display=swap');
 
 .mainWrapper {
   background-image: url("Images/MainWrapper.png");
@@ -28,6 +30,7 @@
     text-align: center;
     font-size: 40px;
     font-weight: 700;
+    font-family: 'Oswald', sans-serif;
   }
 
   & > div {
@@ -36,6 +39,8 @@
     & > p {
       color: #FFF;
       font-size: 20px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
     }
   }
 }
@@ -47,11 +52,15 @@
   & p {
     font-size: 13px;
     margin: 10px 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
   }
 
   & a {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.50);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
   }
 }
 
