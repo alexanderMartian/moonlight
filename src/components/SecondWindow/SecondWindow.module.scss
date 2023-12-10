@@ -1,9 +1,10 @@
+@import '../../styles/variables.scss';
+
 .mainWrapper {
   background-image: url("Images/MainWrapper.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  padding: 40px 100px 0 100px;
   overflow: hidden;
 }
 
@@ -12,4 +13,44 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  & .videoItem {
+    width: 80vw;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: $tablet) {
+  
+  .videoWrapper {
+  
+    & .videoItem {
+      height: 40vh;
+      width: 80vw;
+    }
+  }
+
+}
+
+@media (min-width: $tablet-max) {
+
+}
+
+@media (min-width: $desktop) {
+  .videoWrapper {
+    top: 55%;
+  
+    & .videoItem {
+      height: 60vh;
+      width: 60vw;
+    }
+  }
+}
+
+@media (min-width: $desktop-big) {
+
+}
+
+@media (min-width: $desktop-max) {
+
 }

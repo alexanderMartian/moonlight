@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Mousewheel, Pagination } from 'swiper/modules';
 import FirstWindow from './components/FirstWindow/FirstWindow';
+import SecondWindow from './components/SecondWindow/SecondWindow';
 import Header from './components/Header/Header';
 
 function App() {
@@ -25,7 +26,9 @@ function App() {
         <SwiperSlide>
           <FirstWindow/>
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>
+          <SecondWindow/>
+        </SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
       </Swiper>
     </div>
