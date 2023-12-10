@@ -2,22 +2,32 @@
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   position: absolute !important;
   top: 0;
   background-size: cover;
-  padding: 0 0 200px 0;
+  padding: 0 0 0 0;
   overflow: hidden;
   z-index: 10;
   width: 100%;
+  background-color: #04080F;
+  padding: 20px;
+  height: 61px;
 
   & .logoMenuWrapper {
     display: flex;
     align-items: center;
-    margin: 20px 0 20px 20px;
+
+    & .menu {
+      margin-right: 20px;
+    }
+
+    & .none {
+      display: none;
+      margin-left: 20px;
+    }
 
     & .logoMenuLink {
-      margin-left: 20px;
 
       & > p {
         color: #FFF;
@@ -31,9 +41,6 @@
   & .navigation {
     display: flex;
     align-items: center;
-    position: absolute;
-    left: 5px;
-    top: 75px;
 
     & .navigationList {
       display: none;
@@ -41,32 +48,28 @@
 
     & .navigationListMobile {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      list-style-type: none;
-      background: #8f8f89e6;
-      z-index: 1;
-  
+      list-style: none;
+
+      & > li:first-child {
+        margin-right: 10px;
+      }
+
       & .navigationItem {
-        width: 100%;
-        border-bottom: #FFF solid 1px;
-        position: relative;
-        align-items: center;
         display: flex;
   
         & .navigationItemLink {
-          color: #FFF;
-          padding: 22px 150px 22px 15px;
-          margin: 2px;
-          font-size: 18px;
-          display: block;
-          cursor: pointer;
+
+          display: flex;
+
   
           & > div {
-            display: none;
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
           }
     
           & > p {
+            color: rgba(255, 255, 255, 0.70);
             font-size: 20px;
             font-weight: 500;
           }
@@ -76,11 +79,14 @@
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   
   .wrapper {
-    padding: 30px 50px 0 50px;
-  
+    background-color: transparent;  
+    height: auto;
+    justify-content: space-between;
+    padding: 40px 100px 0 100px;
+
     & .logoMenuWrapper {
   
       & .menu {
@@ -97,7 +103,6 @@
     }
 
     & .navigation {
-      position: static;
       
       & .navigationList {
         display: flex;
@@ -129,6 +134,29 @@
     }  
   }
 }
+
+// @media (min-width: $desktop) {
+//   .wrapper {
+//     padding: 40px 100px 0 100px;
+//     background-color: transparent;  
+//     height: auto;
+//     justify-content: space-between;
+
+//     & .logoMenuWrapper {
+
+//       & .menu {
+//         display: none;
+//       }
+  
+//       & .logoMenuLink {
+
+//         & > p {
+
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media (min-width: $desktop-big) {
   .wrapper {

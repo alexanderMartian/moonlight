@@ -9,21 +9,21 @@ const Header = () => {
 
   return (
     <header 
-      onClick={ () => {
-        if (isMobileModeActive) {
-          setIsMobileModeActive(false);
-        }
-        return null;
-      }} 
+      // onClick={ () => {
+      //   if (isMobileModeActive) {
+      //     setIsMobileModeActive(false);
+      //   }
+      //   return null;
+      // }} 
       className={styles.wrapper}>
       <div className={styles.logoMenuWrapper}>
         <div 
-          onClick={() => setIsMobileModeActive(true)} 
+          onClick={() => setIsMobileModeActive(prev => !prev)} 
           className={styles.menu}
         >
           <MenuImg/>
         </div>
-        <a className={styles.logoMenuLink} href="">
+        <a className={!isMobileModeActive ? styles.logoMenuLink : styles.none} href="">
           <p>Moonlight</p>
         </a>
       </div>
