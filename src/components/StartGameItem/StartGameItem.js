@@ -1,13 +1,8 @@
-import { useEffect } from 'react';
 import styles from './StartGameItem.module.scss';
 
 const StartGameItem = ({item}) => {
 
   const {step, text, action, img} = item;
-
-  useEffect( () => {
-    console.log(step, "step")
-  },[step])
 
   return (
     <a className={styles.wrapper}>
