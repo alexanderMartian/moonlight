@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from './ThirdWindow.module.scss';
 import StartGameItem from '../StartGameItem/StartGameItem';
 import {ReactComponent as FirstStepImg} from './Images/Step_1.svg';
-import {ReactComponent as SecondStepimg} from './Images/Step_2.svg';
+import {ReactComponent as SecondStepImg} from './Images/Step_2.svg';
 import {ReactComponent as TrirdStepImg} from './Images/Step_3.svg';
 
 const FirstWindow = () => {
@@ -20,7 +20,7 @@ const FirstWindow = () => {
         step: "2",
         text: "Встановити та запустити офіційний Launcher RAGE MP",
         action: "Завантажити",
-        img: <SecondStepimg/>
+        img: <SecondStepImg/>
       },
       {
         step: "3",
@@ -30,10 +30,6 @@ const FirstWindow = () => {
       },
     ])
   },[])
-
-  useEffect( () => {
-    console.log(startGameData, "startGameData");
-  },[startGameData])
 
   return (
       <main className={styles.mainWrapper}>
