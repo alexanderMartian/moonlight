@@ -1,20 +1,33 @@
+import { useEffect } from 'react';
+import StartGameItemBlock from '../StartGameItemBlock/StartGameItemBlock';
 import styles from './StartGameItem.module.scss';
 
 const StartGameItem = ({item}) => {
 
-  const {step, text, action, img} = item;
+  const {step, text, action, img, link, adressServer} = item;
+
+  function copy(text){
+    navigator.clipboard.writeText(text)
+  }
 
   return (
-    <a className={styles.wrapper}>
-      <div>
-        <h2>Крок <span className={styles.stepQuantity}>{step}</span></h2>
-        <div className={styles.imagesWrapper}>
-          {img}
-        </div>
-      </div>
-      <p className={styles.text}>{text}</p>
-      <p className={styles.action}>{action}</p>
-    </a>
+    <>
+      {
+        link !== undefined 
+        ? 
+        (
+          <a target="_blank" href={link} className={styles.wrapper}>
+            <StartGameItemBlock step={step} text={text} action={action} img={img}/>
+          </a>
+        )
+      :
+        (
+          <div onClick={() => copy(adressServer)} className={styles.wrapper}>
+            <StartGameItemBlock step={step} text={text} action={action} img={img}/>
+          </div>
+        )
+      }
+    </>
   );
 };
 
