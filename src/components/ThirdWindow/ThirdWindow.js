@@ -1,12 +1,19 @@
 import { useEffect, useState } from 'react';
 import styles from './ThirdWindow.module.scss';
 import StartGameItem from '../StartGameItem/StartGameItem';
+import ActionMessage from '../ActionMessage/ActionMessage';
 import {ReactComponent as FirstStepImg} from './Images/Step_1.svg';
 import {ReactComponent as SecondStepImg} from './Images/Step_2.svg';
 import {ReactComponent as TrirdStepImg} from './Images/Step_3.svg';
 
 const FirstWindow = () => {
   const [startGameData, setStartGameData] = useState([]);
+  const [isTextCopied, setIsTextCopied] = useState(false);
+
+  const openMessage = () =>  {
+    setIsTextCopied(true);
+    setTimeout(() => setIsTextCopied(false), 2000);
+  }
 
   useEffect( () => {
     setStartGameData([
@@ -36,6 +43,7 @@ const FirstWindow = () => {
 
   return (
       <main className={styles.mainWrapper}>
+        <ActionMessage isTextCopied={isTextCopied}/>
         <div className={styles.startGameBlock}>
           <h1>
             ЯК РОЗПОЧАТИ ГРАТИ В GTA 5 RP?
@@ -48,7 +56,7 @@ const FirstWindow = () => {
         </div>
         <div className={styles.stepsWrapper}>
           {
-            startGameData.map( item => <StartGameItem item={item} key={item.step}/> )
+            startGameData.map( data => <StartGameItem data={data} key={data.step} openMessage={openMessage}/> )
           }
         </div>
         <footer className={styles.footer}>

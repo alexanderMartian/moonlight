@@ -16,7 +16,7 @@ function App() {
       <Swiper
         direction={'vertical'}
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={10}
         mousewheel={true}
         cssMode={true}
         navigation={true}

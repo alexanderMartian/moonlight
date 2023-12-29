@@ -2,13 +2,11 @@ import { useEffect } from 'react';
 import StartGameItemBlock from '../StartGameItemBlock/StartGameItemBlock';
 import styles from './StartGameItem.module.scss';
 
-const StartGameItem = ({item}) => {
+const StartGameItem = (item) => {
+  const {data, openMessage} = item;
+  const {step, text, action, img, link, adressServer} = data;
 
-  const {step, text, action, img, link, adressServer} = item;
-
-  function copy(text){
-    navigator.clipboard.writeText(text)
-  }
+  const copy = (text) => navigator.clipboard.writeText(text);
 
   return (
     <>
@@ -22,8 +20,13 @@ const StartGameItem = ({item}) => {
         )
       :
         (
-          <div onClick={() => copy(adressServer)} className={styles.wrapper}>
-            <StartGameItemBlock step={step} text={text} action={action} img={img}/>
+          <div 
+            onClick={() => {
+              copy(adressServer);
+              openMessage();
+            }} 
+            className={styles.wrapper}>
+              <StartGameItemBlock step={step} text={text} action={action} img={img}/>
           </div>
         )
       }
