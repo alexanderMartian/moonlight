@@ -61,7 +61,13 @@ const FirstWindow = () => {
         </div>
         <footer className={styles.footer}>
           <p>Moonlight RP is not affiliated with or endorsed by Take-Two, Rockstar North Interactive, or any other rights holder. All the used trademarks belong to their respective owners.</p>
-          <a href="">help.moonlightrp@gmail.com</a>
+          <a
+            href="mailto:help.moonlightrp@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <p className={styles.emailText}>help.moonlightrp@gmail.com</p>
+          </a>
         </footer>
       </main>
   );
