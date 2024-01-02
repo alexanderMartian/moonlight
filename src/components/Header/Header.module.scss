@@ -3,69 +3,134 @@
 
 .wrapper {
   display: flex;
-  // justify-content: space-between;
   position: absolute !important;
   top: 0;
   background-size: cover;
-  padding: 0 0 0 0;
   overflow: hidden;
   z-index: 10;
   width: 100%;
   background-color: #04080F;
   padding: 20px;
   height: 61px;
+}
 
-  & .logoMenuWrapper {
+.wrapperThirdSlide {
+  @extend .wrapper;
+}
+
+.logoMenuWrapper {
+  display: flex;
+  align-items: center;
+
+  & .menu {
+    margin-right: 20px;
+  }
+
+  & .none {
+    display: none;
+    margin-left: 20px;
+  }
+
+  & .logoMenuLink {
+
+    & > p {
+      color: #FFF;
+      font-family: 'Oswald', sans-serif;
+      font-size: 27px;
+      font-weight: 500;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  & .navigationList {
+    display: none;
+  }
+
+  & .navigationListMobile {
     display: flex;
-    align-items: center;
+    list-style: none;
 
-    & .menu {
-      margin-right: 20px;
+    & > li:first-child {
+      margin-right: 10px;
     }
 
-    & .none {
+    & .navigationItem {
+      display: flex;
+
+      & .navigationItemLink {
+
+        display: flex;
+
+
+        & > div {
+          display: flex;
+          align-items: center;
+          margin-right: 5px;
+        }
+  
+        & > p {
+          color: rgba(255, 255, 255, 0.70);
+          font-size: 20px;
+          font-weight: 500;
+          font-family: 'Oswald', sans-serif;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  
+  .wrapper {
+    // background-color: transparent;  
+    height: auto;
+    justify-content: space-between;
+    padding: 15px 100px 15px 100px;
+    // padding: 20px;
+  }
+
+  .wrapperThirdSlide {
+    background-color: #04080F;
+    padding: 20px;
+  }
+
+  .logoMenuWrapper {
+  
+    & .menu {
       display: none;
-      margin-left: 20px;
     }
 
     & .logoMenuLink {
+      margin-left: 0;
 
       & > p {
-        color: #FFF;
-        font-family: 'Oswald', sans-serif;
-        font-size: 27px;
-        font-weight: 500;
+        font-size: 30px;
       }
     }
   }
 
-  & .navigation {
-    display: flex;
-    align-items: center;
-
+  .navigation {
+    
     & .navigationList {
-      display: none;
-    }
-
-    & .navigationListMobile {
       display: flex;
-      list-style: none;
-
+      list-style-type: none;
+      
       & > li:first-child {
         margin-right: 10px;
       }
-
+  
       & .navigationItem {
-        display: flex;
   
         & .navigationItemLink {
-
           display: flex;
-
+          align-items: center;
   
           & > div {
             display: flex;
-            align-items: center;
             margin-right: 5px;
           }
     
@@ -78,100 +143,25 @@
         }
       }
     }
-  }
+  }  
 }
-
-@media (min-width: $desktop) {
-  
-  .wrapper {
-    background-color: transparent;  
-    height: auto;
-    justify-content: space-between;
-    padding: 40px 100px 0 100px;
-
-    & .logoMenuWrapper {
-  
-      & .menu {
-        display: none;
-      }
-  
-      & .logoMenuLink {
-        margin-left: 0;
-
-        & > p {
-          font-size: 30px;
-        }
-      }
-    }
-
-    & .navigation {
-      
-      & .navigationList {
-        display: flex;
-        list-style-type: none;
-        
-        & > li:first-child {
-          margin-right: 10px;
-        }
-    
-        & .navigationItem {
-    
-          & .navigationItemLink {
-            display: flex;
-            align-items: center;
-    
-            & > div {
-              display: flex;
-              margin-right: 5px;
-            }
-      
-            & > p {
-              color: rgba(255, 255, 255, 0.70);
-              font-size: 20px;
-              font-weight: 500;
-              font-family: 'Oswald', sans-serif;
-            }
-          }
-        }
-      }
-    }  
-  }
-}
-
-// @media (min-width: $desktop) {
-//   .wrapper {
-//     padding: 40px 100px 0 100px;
-//     background-color: transparent;  
-//     height: auto;
-//     justify-content: space-between;
-
-//     & .logoMenuWrapper {
-
-//       & .menu {
-//         display: none;
-//       }
-  
-//       & .logoMenuLink {
-
-//         & > p {
-
-//         }
-//       }
-//     }
-//   }
-// }
 
 @media (min-width: $desktop-big) {
   .wrapper {
     padding: 40px 100px 0 100px;
+    background-color: transparent; 
+  }
 
-    & .logoMenuWrapper {
+  .wrapperThirdSlide {
+    background-color: transparent;
+  }
+
+  .logoMenuWrapper {
   
-      & .logoMenuLink {
+    & .logoMenuLink {
 
-        & > p {
-          font-size: 35px;
-        }
+      & > p {
+        font-size: 35px;
       }
     }
   }
