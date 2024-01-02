@@ -184,11 +184,11 @@
       width: 100%;
       display: block;
       position: absolute;
-      top: 12vh;
-      left: 8%;
+      top: 20vh;
+      left: 12%;
   
       & img {
-        width: 53%;
+        width: 48%;
       }
     }
   
@@ -196,11 +196,11 @@
       width: 100%;
       display: block;
       position: absolute;
-      top: 12vh;
-      left: 54%;
+      top: 20vh;
+      left: 54.5%;
   
       & img {
-        width: 35.5%;
+        width: 32%;
       }
     }
     & .picturesTitle {
@@ -219,11 +219,11 @@
     & .gunPicture {
       width: 100%;
       position: absolute;
-      left: 35%;
-      top: 5vh;
+      left: 37%;
+      top: 13vh;
   
       & > img {
-        width: 36%;
+        width: 33%;
       }
     }
   }
@@ -244,22 +244,22 @@
     & .dogPicture {
       display: flex;
       // position: absolute;
-      // top: 10px;
-      // left: 45px;
+      top: 12vh;
+      left: 8%;
   
       & img {
-
+        width: 53%;
       }
     }
   
     & .batPricture {
       display: flex;
       // position: absolute;
-      // top: 10px;
-      // right: 50px;
+      top: 12vh;
+      left: 54%;
   
       & img {
-
+        width: 35.5%;
       }
     }
     & .picturesTitle {
@@ -277,9 +277,12 @@
       // position: absolute;
       // left: 34%;
       // top: -72px;
+      top: 6vh;
+      left: 35%;
   
       & > img {
         // width: 100%;
+        width: 36%;
       }
     }
   }
