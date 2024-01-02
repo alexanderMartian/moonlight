@@ -1,0 +1,156 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+.stepBlock {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+
+  & h2 {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+
+  & .stepQuantity {
+    color: #419BC8;
+  }
+  }
+
+  & .imagesWrapper {
+    
+  }
+}
+.text {
+  padding: 0 20px 80px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+}
+
+.action {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 7px;
+  background: #11273B;
+  font-weight: 600;
+  font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: $tablet) { 
+
+  .stepBlock {
+  
+    & h2 {
+
+      & .stepQuantity {
+
+      }
+    }
+  
+    & .imagesWrapper {
+      
+    }
+  }
+  .text {
+
+  }
+
+  .action {
+
+  }
+}
+
+@media (min-width: $tablet-max) { 
+  .stepBlock {
+  
+    & h2 {
+
+      & .stepQuantity {
+
+      }
+    }
+  
+    & .imagesWrapper {
+      
+    }
+  }
+  .text {
+
+  }
+
+  .action {
+
+  }
+}
+
+@media (min-width: $desktop) { 
+
+  .stepBlock {
+  
+    & h2 {
+
+      & .stepQuantity {
+
+      }
+    }
+  
+    & .imagesWrapper {
+      
+    }
+  }
+  .text {
+    padding: 0 20px 150px;
+    height: 60%;
+  }
+
+  .action {
+
+  }
+}
+
+@media (min-width: $desktop-big) { 
+  .stepBlock {
+  
+    & h2 {
+
+      & .stepQuantity {
+
+      }
+    }
+  
+    & .imagesWrapper {
+      
+    }
+  }
+  .text {
+
+  }
+
+  .action {
+
+  }
+}
+
+@media (min-width: $desktop-max) { 
+  .stepBlock {
+  
+    & h2 {
+
+      & .stepQuantity {
+
+      }
+    }
+  
+    & .imagesWrapper {
+      
+    }
+  }
+  .text {
+
+  }
+
+  .action {
+
+  }
+}

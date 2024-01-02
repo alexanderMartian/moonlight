@@ -1,21 +1,20 @@
 import styles from './Header.module.scss';
-import {useState } from 'react';
+import {useState, useEffect} from 'react';
 import {ReactComponent as MenuImg} from './Images/BurgerMenu.svg';
 import {ReactComponent as ForumIcon} from './Images/ForumIcon.svg';
 import {ReactComponent as DonatIcon} from './Images/DonatIcon.svg';
 
-const Header = () => {
+const Header = ({currentSlide}) => {
   const [isMobileModeActive, setIsMobileModeActive] = useState(false);
+  useEffect( () => {
+    console.log(currentSlide, "currentSlide")
+  },[currentSlide])
 
   return (
     <header 
-      // onClick={ () => {
-      //   if (isMobileModeActive) {
-      //     setIsMobileModeActive(false);
-      //   }
-      //   return null;
-      // }} 
-      className={styles.wrapper}>
+      className={styles.wrapper}
+      // className={styles.wrapper}
+    >
       <div className={styles.logoMenuWrapper}>
         <div 
           onClick={() => setIsMobileModeActive(prev => !prev)} 
