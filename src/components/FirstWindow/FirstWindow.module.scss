@@ -58,6 +58,12 @@
   top: 95vh;
   left: 50%;
   transform:translate(-50%, -50%); 
+    
+  & svg {
+    & a {
+      cursor: pointer;
+    }
+  }
 }
 
 @media (min-width: $tablet) {
