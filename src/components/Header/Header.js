@@ -33,7 +33,7 @@ const Header = ({currentSlide}) => {
               <div>
                 <ForumIcon/>
               </div>
-              <p>
+              <p className={styles.navigationItemLinkText}>
                 Форум
               </p>
             </a>
@@ -43,7 +43,7 @@ const Header = ({currentSlide}) => {
               <div>
                 <DonatIcon/>
               </div>
-              <p>
+              <p className={styles.navigationItemLinkText}>
                 Донат
               </p>
             </a>
