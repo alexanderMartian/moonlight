@@ -33,6 +33,10 @@
 
   & .logoMenuLink {
 
+    & :hover {
+      color: #419BC8;
+    }
+
     & > p {
       color: #FFF;
       font-family: 'Oswald', sans-serif;
@@ -54,29 +58,18 @@
     display: flex;
     list-style: none;
 
-    & > li:first-child {
-      margin-right: 10px;
-    }
-
     & .navigationItem {
       display: flex;
 
       & .navigationItemLink {
-
         display: flex;
-
-
-        & > div {
-          display: flex;
-          align-items: center;
-          margin-right: 5px;
-        }
   
-        & > p {
+        & .navigationItemLinkText {
           color: rgba(255, 255, 255, 0.70);
           font-size: 20px;
           font-weight: 500;
           font-family: 'Oswald', sans-serif;
+          padding: 10px;
         }
       }
     }
@@ -128,17 +121,33 @@
         & .navigationItemLink {
           display: flex;
           align-items: center;
+          padding: 10px;
   
           & > div {
             display: flex;
             margin-right: 5px;
           }
     
-          & > p {
+          & .navigationItemLinkText {
             color: rgba(255, 255, 255, 0.70);
             font-size: 20px;
             font-weight: 500;
             font-family: 'Oswald', sans-serif;
+          }
+        }
+
+        & .navigationItemLink:hover {
+          & > div {
+            & svg {
+              & path {
+                fill: #419BC8;
+                fill-opacity: 1;
+              }
+            }
+          }
+
+          & .navigationItemLinkText {
+            color: #419BC8;
           }
         }
       }

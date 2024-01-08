@@ -19,7 +19,7 @@ const FirstWindow = () => {
           <img src={MainPicturesWithGun} alt="MainPicturesWithGun"/>
         </div>
         <footer className={styles.footer}>
-          <svg width="134" height="35" viewBox="0 0 134 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <svg width="134" height="35" viewBox="0 0 134 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <a 
               href="https://discord.com/moonlight-rp"
               target="_blank"

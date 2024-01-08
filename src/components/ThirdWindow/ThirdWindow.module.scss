@@ -63,6 +63,10 @@
       color: rgba(255, 255, 255, 0.50);
       font-family: 'Oswald', sans-serif;
       font-weight: 300;
+
+      &:hover {
+        color: #419BC8;
+      }
     }
   }
 }
