@@ -62,6 +62,11 @@
 
       & .navigationItemLink {
         display: flex;
+
+        & div {
+          align-items: center;
+          display: flex;
+        }
   
         & .navigationItemLinkText {
           color: rgba(255, 255, 255, 0.70);
