@@ -12,11 +12,6 @@
   }
 }
 
-.wrapper {
-  position: relative;
-}
-
-
 @media (min-width: $tablet) {
   .swiper {
     & > div:last-child {
