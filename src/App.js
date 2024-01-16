@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="wrapper">
-
+      <Header currentSlide={currentSlide}/>
       <Swiper
         direction={'vertical'}
         slidesPerView={1}
