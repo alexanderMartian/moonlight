@@ -15,7 +15,8 @@ function App() {
   return (
     <div className="wrapper">
       <Header currentSlide={currentSlide}/>
-      <Swiper
+      <FirstWindow/>
+      {/* <Swiper
         direction={'vertical'}
         slidesPerView={1}
         spaceBetween={10}
@@ -38,7 +39,7 @@ function App() {
         <SwiperSlide>
           <ThirdWindow/>
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
     </div>
   );
 }
