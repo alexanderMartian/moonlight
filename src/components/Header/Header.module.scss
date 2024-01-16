@@ -3,14 +3,13 @@
 
 .wrapper {
   display: flex;
-  position: fixed !important;
+  position: absolute;
   background-size: cover;
   z-index: 10;
   width: 100%;
   background-color: #04080F;
   padding: 10.5px 20px;
   top: 0;
-  left: 0;
 }
 
 .wrapperThirdSlide {
@@ -73,7 +72,7 @@
           font-size: 20px;
           font-weight: 500;
           font-family: 'Oswald', sans-serif;
-          padding: 10px;
+          padding: 5px 10px;
         }
       }
     }
