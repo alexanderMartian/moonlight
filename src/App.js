@@ -13,33 +13,9 @@ function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="wrapper">
-      <Header currentSlide={currentSlide}/>
-      <Swiper
-        direction={'vertical'}
-        slidesPerView={1}
-        spaceBetween={10}
-        mousewheel={true}
-        cssMode={true}
-        navigation={true}
-        pagination={true}
-        keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        scrollbar={{ draggable: true }}
-        className="mySwiper"
-        onSlideChange={(swiper) => setCurrentSlide(swiper.activeIndex)}
-      >
-        <SwiperSlide>
-          <FirstWindow/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <SecondWindow/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ThirdWindow/>
-        </SwiperSlide>
-      </Swiper>
-    </div>
+          <>
+            <FirstWindow/>
+          </>
   );
 }
 
