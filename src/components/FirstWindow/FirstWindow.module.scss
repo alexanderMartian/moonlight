@@ -1,16 +1,13 @@
 @import '../../styles/variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
 
-.mainWrapper {
+.wrapper {
   background-image: url("Images/MainWrapper.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100dvh;
   width: 100vw;
   overflow: hidden;
-}
-
-.picturesWrapper{
   position: relative;
 
   & .dogPicture {
@@ -66,12 +63,8 @@
 }
 
 @media (min-width: $tablet) {
-
-  .mainWrapper {
-
-  }
   
-  .picturesWrapper{
+  .wrapper{
   
     & .dogPicture {
       // display: flex;
@@ -123,11 +116,8 @@
 
 @media (min-width: $tablet-max) {
 
-  .mainWrapper {
-
-  }
   
-  .picturesWrapper{
+  .wrapper {
   
     & .dogPicture {
       // display: flex;
@@ -178,12 +168,8 @@
 }
 
 @media (min-width: $desktop) {
-
-  .mainWrapper {
-
-  }
   
-  .picturesWrapper{
+  .wrapper {
   
     & .dogPicture {
       width: 100%;
@@ -239,12 +225,8 @@
 }
 
 @media (min-width: $desktop-big) {
-
-  .mainWrapper {
-
-  }
   
-  .picturesWrapper{
+  .wrapper {
   
     & .dogPicture {
       display: flex;
@@ -298,12 +280,8 @@
 }
 
 @media (min-width: $desktop-max) {
-
-  .mainWrapper {
-
-  }
   
-  .picturesWrapper{
+  .wrapper {
   
     & .dogPicture {
       display: flex;
