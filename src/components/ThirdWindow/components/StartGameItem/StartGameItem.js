@@ -1,4 +1,4 @@
-import StartGameItemBlock from '../StartGameItemBlock/StartGameItemBlock';
+import StartGameItemBlock from "../StartGameItemBlock/StartGameItemBlock";
 import styles from './StartGameItem.module.scss';
 
 const StartGameItem = (item) => {

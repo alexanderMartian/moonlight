@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './ThirdWindow.module.scss';
-import StartGameItem from '../StartGameItem/StartGameItem';
-import ActionMessage from '../ActionMessage/ActionMessage';
+import StartGameItem from "./components/StartGameItem/StartGameItem";
+import ActionMessage from "./components/ActionMessage/ActionMessage";
 import {ReactComponent as FirstStepImg} from './Images/Step_1.svg';
 import {ReactComponent as SecondStepImg} from './Images/Step_2.svg';
 import {ReactComponent as TrirdStepImg} from './Images/Step_3.svg';
