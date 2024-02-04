@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import StartGameItemBlock from '../StartGameItemBlock/StartGameItemBlock';
 import styles from './StartGameItem.module.scss';
 

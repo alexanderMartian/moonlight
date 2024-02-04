@@ -1,19 +1,15 @@
 import styles from './Header.module.scss';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import {ReactComponent as MenuImg} from './Images/BurgerMenu.svg';
 import {ReactComponent as ForumIcon} from './Images/ForumIcon.svg';
 import {ReactComponent as DonatIcon} from './Images/DonatIcon.svg';
 
-const Header = ({currentSlide}) => {
+const Header = () => {
   const [isMobileModeActive, setIsMobileModeActive] = useState(false);
-  useEffect( () => {
-    console.log(currentSlide, "currentSlide")
-  },[currentSlide])
 
   return (
     <header 
       className={styles.wrapper}
-      // className={styles.wrapper}
     >
       <div className={styles.logoMenuWrapper}>
         <div 
