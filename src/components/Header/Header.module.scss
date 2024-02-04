@@ -26,7 +26,6 @@
 
   & .none {
     display: none;
-    margin-left: 20px;
   }
 
   & .logoMenuLink {
@@ -62,7 +61,7 @@
       & .navigationItemLink {
         display: flex;
 
-        & div {
+        & .navigationItemLinkSvg {
           align-items: center;
           display: flex;
         }
@@ -82,11 +81,9 @@
 @media (min-width: $desktop) {
   
   .wrapper {
-    // background-color: transparent;  
     height: auto;
     justify-content: space-between;
     padding: 15px 100px 15px 100px;
-    // padding: 20px;
   }
 
   .wrapperThirdSlide {
@@ -125,7 +122,7 @@
           display: flex;
           align-items: center;
   
-          & > div {
+          & > .navigationItemLinkSvg {
             display: flex;
             margin-right: 5px;
           }
@@ -139,8 +136,11 @@
         }
 
         & .navigationItemLink:hover {
-          & > div {
+
+          & .navigationItemLinkSvg {
+
             & svg {
+
               & path {
                 fill: #419BC8;
                 fill-opacity: 1;
@@ -157,7 +157,7 @@
   }  
 }
 
-@media (min-width: $desktop-big) {
+@media (min-width: $desktop-1600) {
   .wrapper {
     padding: 40px 100px 0 100px;
     background-color: transparent; 
@@ -176,4 +176,147 @@
       }
     }
   }
+}
+
+@media (min-width: $desktop-2560) {
+  .wrapper {
+    padding: 50px 130px 0 130px;
+  }
+  
+  .logoMenuWrapper {
+  
+    & .logoMenuLink {
+
+      & > p {
+        font-size: 55px;
+      }
+    }
+  }
+  
+  .navigation {
+    
+    & .navigationList {
+
+      
+      & > li:first-child {
+        margin-right: 20px;
+      }
+  
+      & .navigationItem {
+  
+        & .navigationItemLink {
+
+  
+          & .navigationItemLinkSvg {
+            margin-right: 10px;
+            
+            & svg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+    
+          & .navigationItemLinkText {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: $desktop-3200) {
+
+  .wrapper {
+    padding: 65px 150px 0 150px;
+  }
+  
+  .logoMenuWrapper {
+  
+    & .logoMenuLink {
+
+      & > p {
+        font-size: 75px;
+      }
+    }
+  }
+  
+  .navigation {
+    
+    & .navigationList {
+
+      
+      & > li:first-child {
+        margin-right: 25px;
+      }
+  
+      & .navigationItem {
+  
+        & .navigationItemLink {
+
+  
+          & .navigationItemLinkSvg {
+            margin-right: 15px;
+            
+            & svg {
+              width: 40px;
+              height: 40px;
+            }
+          }
+    
+          & .navigationItemLinkText {
+            font-size: 45px;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: $desktop-3840) {
+  
+  .wrapper {
+    padding: 80px 200px 0 200px;
+  }
+  
+  .logoMenuWrapper {
+  
+    & .logoMenuLink {
+
+      & > p {
+        font-size: 90px;
+      }
+    }
+  }
+  
+  .navigation {
+    
+    & .navigationList {
+
+      
+      & > li:first-child {
+        margin-right: 30px;
+      }
+  
+      & .navigationItem {
+  
+        & .navigationItemLink {
+
+  
+          & .navigationItemLinkSvg {
+            margin-right: 20px;
+            
+            & svg {
+              width: 50px;
+              height: 50px;
+            }
+          }
+    
+          & .navigationItemLinkText {
+            font-size: 55px;
+          }
+        }
+      }
+    }
+  }  
 }

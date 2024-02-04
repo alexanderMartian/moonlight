@@ -8,9 +8,7 @@ const Header = () => {
   const [isMobileModeActive, setIsMobileModeActive] = useState(false);
 
   return (
-    <header 
-      className={styles.wrapper}
-    >
+    <header className={styles.wrapper}>
       <div className={styles.logoMenuWrapper}>
         <div 
           onClick={() => setIsMobileModeActive(prev => !prev)} 
@@ -18,7 +16,7 @@ const Header = () => {
         >
           <MenuImg/>
         </div>
-        <a className={!isMobileModeActive ? styles.logoMenuLink : styles.none} href="">
+        <a className={isMobileModeActive ? styles.none : styles.logoMenuLink} href="">
           <p>Moonlight</p>
         </a>
       </div>
@@ -26,7 +24,7 @@ const Header = () => {
         <ul className={isMobileModeActive ? styles.navigationListMobile : styles.navigationList}>
           <li className={styles.navigationItem}>
             <a className={styles.navigationItemLink} href="">
-              <div>
+              <div className={styles.navigationItemLinkSvg}>
                 <ForumIcon/>
               </div>
               <p className={styles.navigationItemLinkText}>
@@ -36,7 +34,7 @@ const Header = () => {
           </li>
           <li className={styles.navigationItem}>
             <a className={styles.navigationItemLink} href="">
-              <div>
+              <div className={styles.navigationItemLinkSvg}>
                 <DonatIcon/>
               </div>
               <p className={styles.navigationItemLinkText}>
