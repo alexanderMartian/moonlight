@@ -64,7 +64,7 @@ const FirstWindow = () => {
           <a
             href="mailto:help.moonlightrp@gmail.com"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
             <p className={styles.emailText}>help.moonlightrp@gmail.com</p>
           </a>
