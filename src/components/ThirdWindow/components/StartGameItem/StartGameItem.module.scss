@@ -15,14 +15,7 @@
 
 @media (min-width: $tablet) { 
   .wrapper {
-
-  }
-
-}
-
-@media (min-width: $tablet-max) { 
-  .wrapper {
-
+    margin: 20px 0 20px;
   }
 
 }
@@ -33,19 +26,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
   }
-}
-
-@media (min-width: $desktop-big) { 
-  .wrapper {
-
-  }
-
-}
-
-@media (min-width: $desktop-max) { 
-  .wrapper {
-
-  }
-
 }

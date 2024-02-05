@@ -22,7 +22,7 @@ const FirstWindow = () => {
         <ActionMessage isTextCopied={isTextCopied}/>
         <div className={styles.startGameBlock}>
           <h1>
-            ЯК РОЗПОЧАТИ ГРАТИ В GTA 5 RP?
+            ЯК РОЗПОЧАТИ ГРАТИ В GTA 5 RP ?
           </h1>
           <div>
             <p>
@@ -36,7 +36,7 @@ const FirstWindow = () => {
           }
         </div>
         <footer className={styles.footer}>
-          <p>Moonlight RP is not affiliated with or endorsed by Take-Two, Rockstar North Interactive, or any other rights holder. All the used trademarks belong to their respective owners.</p>
+          <p className={styles.footerText}>Moonlight RP is not affiliated with or endorsed by Take-Two, Rockstar North Interactive, or any other rights holder. All the used trademarks belong to their respective owners.</p>
           <a
             href="mailto:help.moonlightrp@gmail.com"
             target="_blank"
