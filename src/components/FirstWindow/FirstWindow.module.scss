@@ -56,10 +56,20 @@
   top: 95dvh;
   left: 50%;
   transform:translate(-50%, -50%); 
-    
-  & svg {
-    & a {
-      cursor: pointer;
+  display: flex;
+
+  & a {
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  & a:hover {
+  
+    & svg {
+
+      & path {
+        fill: #419BC8;
+      }
     }
   }
 }
@@ -85,6 +95,33 @@
   
   .footer {
 
+    & a {
+      padding: 10px 20px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: 40px;
+        height: 45px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 52px;
+        height: 40px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 35px;
+        height: 40px;
+      }
+    }
   }
 }
 
@@ -107,6 +144,33 @@
   
   .footer {
 
+    & a {
+      padding: 15px 25px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 72px;
+        height: 60px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
   }
 }
 
@@ -157,6 +221,33 @@
   
   .footer {
 
+    & a {
+      padding: 10px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: auto;
+        height: auto;
+      }
+    }
   }
 }
 
@@ -197,17 +288,6 @@
       }
     }
   }
-  
-  .footer {
-
-  }
-}
-
-@media (min-width: $desktop-1920) {
-  
-  .footer {
-
-  }
 }
 
 @media (min-width: $desktop-2560) {
@@ -221,6 +301,33 @@
   
   .footer {
 
+    & a {
+      padding: 10px 20px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 72px;
+        height: 60px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
   }
 }
 
@@ -234,7 +341,31 @@
   }
   
   .footer {
+    top: 96dvh;
 
+    & .discordLink {
+
+      & svg {
+        width: 65px;
+        height: 70px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 82px;
+        height: 70px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 65px;
+        height: 70px;
+      }
+    }
   }
 }
 
@@ -249,5 +380,28 @@
   
   .footer {
 
+    & .discordLink {
+
+      & svg {
+        width: 75px;
+        height: 80px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 92px;
+        height: 80px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 75px;
+        height: 80px;
+      }
+    }
   }
 }

@@ -2,6 +2,9 @@ import styles from './FirstWindow.module.scss';
 import MainPicturesWithDog from './Images/MainPicturesWithDog.png';
 import MainPicturesWithBita from './Images/MainPicturesWithBita.png';
 import MainPicturesWithGun from './Images/MainPicturesWithGun.png';
+import {ReactComponent as DiscordIcon} from './Images/discord.svg';
+import {ReactComponent as YoutubeIcon} from './Images/youtube.svg';
+import {ReactComponent as TiktokIcon} from './Images/tiktok.svg';
 
 const FirstWindow = () => {
 
@@ -17,7 +20,7 @@ const FirstWindow = () => {
       <div className={styles.gunPicture}>
         <img src={MainPicturesWithGun} alt="MainPicturesWithGun"/>
       </div>
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
          <svg width="134" height="35" viewBox="0 0 134 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <a 
             href="https://discord.com/moonlight-rp"
@@ -41,6 +44,17 @@ const FirstWindow = () => {
             <path d="M128.924 7.41526C127.853 6.18882 127.263 4.61377 127.263 2.98334H122.422V22.4712C122.384 23.5258 121.941 24.5247 121.184 25.2576C120.427 25.9905 119.416 26.4001 118.364 26.4003C116.139 26.4003 114.29 24.5772 114.29 22.3141C114.29 19.6109 116.891 17.5835 119.57 18.4165V13.4502C114.165 12.7273 109.433 16.9392 109.433 22.3141C109.433 27.5475 113.758 31.2722 118.348 31.2722C123.268 31.2722 127.263 27.2646 127.263 22.3141V12.4287C129.226 13.8429 131.583 14.6017 134 14.5975V9.74124C134 9.74124 131.055 9.88268 128.924 7.41526Z" fill="white"/>
           </a>
         </svg>
+      </footer> */}
+      <footer className={styles.footer}>
+        <a className={styles.discordLink}>
+          <DiscordIcon/>
+        </a>
+        <a className={styles.youTubeLink}>
+          <YoutubeIcon/>
+        </a>
+        <a className={styles.tikTokLink}>
+          <TiktokIcon/>
+        </a>
       </footer>
     </main>
   );
