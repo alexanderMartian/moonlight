@@ -1,10 +1,10 @@
 import styles from './FirstWindow.module.scss';
-import MainPicturesWithDog from './Images/MainPicturesWithDog.png';
-import MainPicturesWithBita from './Images/MainPicturesWithBita.png';
-import MainPicturesWithGun from './Images/MainPicturesWithGun.png';
-import {ReactComponent as DiscordIcon} from './Images/discord.svg';
-import {ReactComponent as YoutubeIcon} from './Images/youtube.svg';
-import {ReactComponent as TiktokIcon} from './Images/tiktok.svg';
+import MainPicturesWithDog from './images/MainPicturesWithDog.png';
+import MainPicturesWithBita from './images/MainPicturesWithBita.png';
+import MainPicturesWithGun from './images/MainPicturesWithGun.png';
+import {ReactComponent as DiscordIcon} from './images/discord.svg';
+import {ReactComponent as YoutubeIcon} from './images/youtube.svg';
+import {ReactComponent as TiktokIcon} from './images/tiktok.svg';
 
 const FirstWindow = () => {
 
