@@ -1,8 +1,8 @@
 import styles from './Header.module.scss';
 import {useState} from 'react';
-import {ReactComponent as MenuImg} from './Images/BurgerMenu.svg';
-import {ReactComponent as ForumIcon} from './Images/ForumIcon.svg';
-import {ReactComponent as DonatIcon} from './Images/DonatIcon.svg';
+import {ReactComponent as MenuImg} from './images/BurgerMenu.svg';
+import {ReactComponent as ForumIcon} from './images/ForumIcon.svg';
+import {ReactComponent as DonatIcon} from './images/DonatIcon.svg';
 
 const Header = () => {
   const [isMobileModeActive, setIsMobileModeActive] = useState(false);
