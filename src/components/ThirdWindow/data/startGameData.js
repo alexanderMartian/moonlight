@@ -1,6 +1,6 @@
-import {ReactComponent as FirstStepImg} from '../Images/Step_1.svg';
-import {ReactComponent as SecondStepImg} from '../Images/Step_2.svg';
-import {ReactComponent as TrirdStepImg} from '../Images/Step_3.svg';
+import {ReactComponent as FirstStepImg} from '../images/Step_1.svg';
+import {ReactComponent as SecondStepImg} from '../images/Step_2.svg';
+import {ReactComponent as TrirdStepImg} from '../images/Step_3.svg';
 
 const startGameData = [
   {
