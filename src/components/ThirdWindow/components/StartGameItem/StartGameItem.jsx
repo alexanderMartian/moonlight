@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import StartGameItemBlock from '../StartGameItemBlock/StartGameItemBlock';
+import StartGameItemBlock from "../StartGameItemBlock/StartGameItemBlock";
 import styles from './StartGameItem.module.scss';
 
 const StartGameItem = (item) => {
@@ -14,7 +13,7 @@ const StartGameItem = (item) => {
         link !== undefined 
         ? 
         (
-          <a target="_blank" href={link} className={styles.wrapper}>
+          <a target="_blank" rel="noreferrer noopener" href={link} className={styles.wrapper}>
             <StartGameItemBlock step={step} text={text} action={action} img={img}/>
           </a>
         )

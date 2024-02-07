@@ -1,4 +1,3 @@
-import Header from '../Header/Header';
 import styles from './SecondWindow.module.scss';
 
 const SecondWindow = () => {

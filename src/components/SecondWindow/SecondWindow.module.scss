@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .mainWrapper {
-  background-image: url("Images/MainWrapper.png");
+  background-image: url("../../images/MainWrapper.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -32,10 +32,6 @@
 
 }
 
-@media (min-width: $tablet-max) {
-
-}
-
 @media (min-width: $desktop) {
   .videoWrapper {
     top: 55%;
@@ -45,12 +41,4 @@
       width: 60vw;
     }
   }
-}
-
-@media (min-width: $desktop-big) {
-
-}
-
-@media (min-width: $desktop-max) {
-
 }
