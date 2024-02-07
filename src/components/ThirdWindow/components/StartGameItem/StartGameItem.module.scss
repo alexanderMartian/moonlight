@@ -1,0 +1,31 @@
+@import '../../../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+.wrapper {
+  border-radius: 7px;
+  background: #0B1D2D;
+  margin: 10px 0 10px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.wrapper:hover {
+  box-shadow: 1px 1px 10px 5px #419BC8;
+}
+
+@media (min-width: $tablet) { 
+  .wrapper {
+    margin: 20px 0 20px;
+  }
+
+}
+
+@media (min-width: $desktop) { 
+  .wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+}

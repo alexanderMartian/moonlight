@@ -1,0 +1,421 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+.wrapper {
+  display: flex;
+  position: absolute;
+  background-size: cover;
+  z-index: 10;
+  width: 100%;
+  background-color: #04080F;
+  padding: 10.5px 20px;
+  top: 0;
+}
+
+.wrapperThirdSlide {
+  @extend .wrapper;
+}
+
+.logoMenuWrapper {
+  display: flex;
+  align-items: center;
+
+  & .menu {
+    margin-right: 20px;
+    display: flex;
+  }
+
+  & .none {
+    display: none;
+  }
+
+  & .logoMenuLink {
+
+    & :hover {
+      color: #419BC8;
+    }
+
+    & > p {
+      color: #FFF;
+      font-family: 'Oswald', sans-serif;
+      font-size: 27px;
+      font-weight: 500;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  & .navigationList {
+    display: none;
+  }
+
+  & .navigationListMobile {
+    display: flex;
+    list-style: none;
+
+    & .navigationItem {
+      display: flex;
+
+      & .navigationItemLink {
+        display: flex;
+
+        & .navigationItemLinkSvg {
+          align-items: center;
+          display: flex;
+        }
+  
+        & .navigationItemLinkText {
+          color: rgba(255, 255, 255, 0.70);
+          font-size: 20px;
+          font-weight: 500;
+          font-family: 'Oswald', sans-serif;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+
+  .wrapper {
+    padding: 20px;
+  }
+
+  .logoMenuWrapper {
+
+    & .menu {
+      margin-right: 25px;
+
+      & svg {
+        width: 34px;
+        height: 30px;
+      }
+    }
+
+    & .logoMenuLink {
+
+      & > p {
+        font-size: 34px;
+      }
+    }
+  }
+
+  .navigation {
+    
+    & .navigationListMobile {
+
+      & > li:first-child {
+        margin-right: 10px;
+      }
+  
+      & .navigationItem {
+  
+        & .navigationItemLink {
+
+          & .navigationItemLinkSvg {
+            
+            & svg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+    
+          & .navigationItemLinkText {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-max) {
+
+  .wrapper {
+    padding: 25px;
+  }
+
+  .logoMenuWrapper {
+
+    & .menu {
+      margin-right: 30px;
+    }
+
+    & .logoMenuLink {
+
+      & > p {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .navigation {
+    
+    & .navigationListMobile {
+
+      & > li:first-child {
+        margin-right: 15px;
+      }
+  
+      & .navigationItem {
+  
+        & .navigationItemLink {
+
+          & .navigationItemLinkSvg {
+            
+            & svg {
+              width: 34px;
+              height: 34px;
+            }
+          }
+    
+          & .navigationItemLinkText {
+            font-size: 33px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  
+  .wrapper {
+    height: auto;
+    justify-content: space-between;
+    padding: 15px 100px 15px 100px;
+  }
+
+  .wrapperThirdSlide {
+    background-color: #04080F;
+    padding: 20px;
+  }
+
+  .logoMenuWrapper {
+  
+    & .menu {
+      display: none;
+    }
+
+    & .logoMenuLink {
+      margin-left: 0;
+
+      & > p {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .navigation {
+    
+    & .navigationList {
+      display: flex;
+      list-style-type: none;
+      
+      & > li:first-child {
+        margin-right: 10px;
+      }
+  
+      & .navigationItem {
+  
+        & .navigationItemLink {
+          display: flex;
+          align-items: center;
+  
+          & > .navigationItemLinkSvg {
+            display: flex;
+            margin-right: 5px;
+          }
+    
+          & .navigationItemLinkText {
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Oswald', sans-serif;
+          }
+        }
+
+        & .navigationItemLink:hover {
+
+          & .navigationItemLinkSvg {
+
+            & svg {
+
+              & path {
+                fill: #419BC8;
+                fill-opacity: 1;
+              }
+            }
+          }
+
+          & .navigationItemLinkText {
+            color: #419BC8;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: $desktop-1600) {
+  .wrapper {
+    padding: 40px 100px 0 100px;
+    background-color: transparent; 
+  }
+
+  .wrapperThirdSlide {
+    background-color: transparent;
+  }
+
+  .logoMenuWrapper {
+  
+    & .logoMenuLink {
+
+      & > p {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-2560) {
+  .wrapper {
+    padding: 50px 130px 0 130px;
+  }
+  
+  .logoMenuWrapper {
+  
+    & .logoMenuLink {
+
+      & > p {
+        font-size: 55px;
+      }
+    }
+  }
+  
+  .navigation {
+    
+    & .navigationList {
+
+      
+      & > li:first-child {
+        margin-right: 20px;
+      }
+  
+      & .navigationItem {
+  
+        & .navigationItemLink {
+
+          & .navigationItemLinkSvg {
+            margin-right: 10px;
+            
+            & svg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+    
+          & .navigationItemLinkText {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: $desktop-3200) {
+
+  .wrapper {
+    padding: 65px 150px 0 150px;
+  }
+  
+  .logoMenuWrapper {
+  
+    & .logoMenuLink {
+
+      & > p {
+        font-size: 75px;
+      }
+    }
+  }
+  
+  .navigation {
+    
+    & .navigationList {
+
+      & > li:first-child {
+        margin-right: 25px;
+      }
+  
+      & .navigationItem {
+  
+        & .navigationItemLink {
+
+          & .navigationItemLinkSvg {
+            margin-right: 15px;
+            
+            & svg {
+              width: 40px;
+              height: 40px;
+            }
+          }
+    
+          & .navigationItemLinkText {
+            font-size: 45px;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: $desktop-3840) {
+  
+  .wrapper {
+    padding: 80px 200px 0 200px;
+  }
+  
+  .logoMenuWrapper {
+  
+    & .logoMenuLink {
+
+      & > p {
+        font-size: 90px;
+      }
+    }
+  }
+  
+  .navigation {
+    
+    & .navigationList {
+
+      & > li:first-child {
+        margin-right: 30px;
+      }
+  
+      & .navigationItem {
+  
+        & .navigationItemLink {
+
+          & .navigationItemLinkSvg {
+            margin-right: 20px;
+            
+            & svg {
+              width: 50px;
+              height: 50px;
+            }
+          }
+    
+          & .navigationItemLinkText {
+            font-size: 55px;
+          }
+        }
+      }
+    }
+  }  
+}

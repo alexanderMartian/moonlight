@@ -1,0 +1,408 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+.wrapper {
+  background-image: url("Images/MainWrapper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100dvh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+
+  & .dogPicture {
+    display: none;
+    position: absolute;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .batPricture {
+    display: none;
+    position: absolute;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .picturesTitle {
+    position: absolute;
+    top: 44vh;
+    left: 50%;
+    transform:translate(-50%, -50%); 
+    color: #FFF;
+    text-shadow: 0px 0px 129.528px #419BC8, 0px 0px 259.056px #419BC8, 0px 0px 906.696px #419BC8, 0px 0px 1813.392px #419BC8, 0px 0px 3108.672px #419BC8, 0px 0px 5440.176px #419BC8;
+    font-size: 300px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  & .gunPicture {
+    position: absolute;
+    top: 100px;
+    left: -40px;
+
+    & > img {
+      width: 135%;
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  top: 95dvh;
+  left: 50%;
+  transform:translate(-50%, -50%); 
+  display: flex;
+
+  & a {
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  & a:hover {
+  
+    & svg {
+
+      & path {
+        fill: #419BC8;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  
+  .wrapper{
+
+    & .picturesTitle {
+      top: 35vh;
+      font-size: 190px;
+    }
+  
+    & .gunPicture {
+      top: 95px;
+      left: 0;
+
+      & > img {
+        width: 140%;
+      }
+    }
+  }
+  
+  .footer {
+
+    & a {
+      padding: 10px 20px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: 40px;
+        height: 45px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 52px;
+        height: 40px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 35px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-max) {
+
+  .wrapper {
+
+    & .picturesTitle {
+      font-size: 250px;
+    }
+  
+    & .gunPicture {
+      top: 120px;
+      left: -30px;
+  
+      & > img {
+        width: 200%;
+      }
+    }
+  }
+  
+  .footer {
+
+    & a {
+      padding: 15px 25px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 72px;
+        height: 60px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  
+  .wrapper {
+  
+    & .dogPicture {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 20vh;
+      left: 11%;
+  
+      & img {
+        width: 48%;
+      }
+    }
+  
+    & .batPricture {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 20vh;
+      left: 54.5%;
+  
+      & img {
+        width: 32%;
+      }
+    }
+
+    & .picturesTitle {
+      top: 50vh;
+      font-size: 250px;
+    }
+  
+    & .gunPicture {
+      width: 100%;
+      position: absolute;
+      left: 36%;
+      top: 13vh;
+  
+      & > img {
+        width: 33%;
+      }
+    }
+  }
+  
+  .footer {
+
+    & a {
+      padding: 10px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-1600) {
+  
+  .wrapper {
+  
+    & .dogPicture {
+      display: flex;
+      top: 12vh;
+      left: 8%;
+  
+      & img {
+        width: 53%;
+      }
+    }
+  
+    & .batPricture {
+      display: flex;
+      top: 12vh;
+      left: 54%;
+  
+      & img {
+        width: 35.5%;
+      }
+    }
+
+    & .picturesTitle {
+      font-size: 400px;
+    }
+  
+    & .gunPicture {
+      top: 6vh;
+      left: 35%;
+  
+      & > img {
+        width: 36%;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-2560) {
+  
+  .wrapper {
+
+    & .picturesTitle {
+      font-size: 520px;
+    }
+  }
+  
+  .footer {
+
+    & a {
+      padding: 10px 20px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 72px;
+        height: 60px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-3200) {
+  
+  .wrapper {
+
+    & .picturesTitle {
+      font-size: 650px;
+    }
+  }
+  
+  .footer {
+    top: 96dvh;
+
+    & .discordLink {
+
+      & svg {
+        width: 65px;
+        height: 70px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 82px;
+        height: 70px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 65px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-3840) {
+  
+  .wrapper {
+
+    & .picturesTitle {
+      font-size: 780px;
+    }
+  }
+  
+  .footer {
+
+    & .discordLink {
+
+      & svg {
+        width: 75px;
+        height: 80px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 92px;
+        height: 80px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 75px;
+        height: 80px;
+      }
+    }
+  }
+}

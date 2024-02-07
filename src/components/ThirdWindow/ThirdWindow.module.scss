@@ -1,0 +1,298 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Oswald:wght@500;600;700&display=swap');
+
+.mainWrapper {
+  background-image: url("Images/MainWrapper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stepsWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.startGameBlock {
+  margin: 120px 15px 40px;
+
+  & > h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  & > div {
+    display: none;
+    
+    & > p {
+      color: #FFF;
+      font-size: 20px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+    }
+  }
+}
+
+.footer {
+  margin: 20px 15px;
+  color: rgba(255, 255, 255, 0.50);
+
+  & .footerText {
+    font-size: 13px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  & a {
+    
+    & .emailText {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.50);
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+
+      &:hover {
+        color: #419BC8;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) { 
+  
+  .stepsWrapper {
+    margin: 0 60px;
+  }
+  
+  .startGameBlock {
+    margin: 120px 0 40px;
+  
+    & > h1 {
+      margin-bottom: 25px;
+    }
+  
+    & > div {
+      display: flex;
+      justify-content: center;
+
+      & > p {
+        width: 82%;
+        text-align: center;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    margin: 35px 60px;
+  
+    & .footerText  {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) { 
+  
+  .stepsWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 100px;
+  }
+  
+  .startGameBlock {
+    margin: 120px 0 60px;
+  
+    & > div {
+    
+      & > p {
+        width: 70%;
+      }
+    }
+  }
+
+  .footer {
+    margin: 35px 100px;
+
+    & .footerText  {
+      width: 30%;
+    }
+  }
+}
+
+@media (min-width: $desktop-1600) { 
+  
+  .stepsWrapper {
+    margin: 0 200px;
+  }
+  
+  .startGameBlock {
+  
+    & > div {
+    
+      & > p {
+        width: 55%;
+      }
+    }
+  }
+
+  .footer {
+    margin: 35px 40px;
+  }
+}
+
+@media (min-width: $desktop-1920) { 
+  
+  .stepsWrapper {
+    margin: 0 250px;
+  }
+  
+  .startGameBlock {
+  
+    & > div {
+    
+      & > p {
+        width: 45%;
+      }
+    }
+  }
+  
+  .footer {
+
+    & .footerText  {
+      font-size: 16px;
+    }
+  
+    & a {
+    
+      & .emailText {
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-2560) { 
+  
+  .stepsWrapper {
+    margin: 0 400px;
+  }
+  
+  .startGameBlock {
+    margin: 200px 0 40px;
+  
+    & > h1 {
+      font-size: 60px;
+      margin-bottom: 50px;
+    }
+  
+    & > div {
+    
+      & > p {
+        font-size: 25px;
+      }
+    }
+  }
+  
+  .footer {
+    margin: 45px 80px;
+
+    & .footerText  {
+      font-size: 19px;
+    }
+  
+    & a {
+    
+      & .emailText {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-3200) { 
+  
+  .stepsWrapper {
+    margin: 0 500px;
+  }
+  
+  .startGameBlock {
+    margin: 240px 0 40px;
+  
+    & > h1 {
+      font-size: 70px;
+    }
+  
+    & > div {
+    
+      & > p {
+        font-size: 30px;
+      }
+    }
+  }
+  
+  .footer {
+    margin: 55px 100px;
+
+    & .footerText  {
+      font-size: 22px;
+    }
+  
+    & a {
+    
+      & .emailText {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-3840) { 
+  
+  .stepsWrapper {
+    margin: 0 700px;
+  }
+  
+  .startGameBlock {
+    margin: 290px 0 40px;
+  
+    & > h1 {
+      font-size: 80px;
+    }
+  
+    & > div {
+    
+      & > p {
+        font-size: 35px;
+      }
+    }
+  }
+  
+  .footer {
+    margin: 65px 120px;
+
+    & .footerText  {
+      font-size: 25px;
+    }
+  
+    & a {
+    
+      & .emailText {
+        font-size: 28px;
+      }
+    }
+  }
+}
