@@ -1,20 +1,14 @@
 import styles from './Header.module.scss';
-import {useState, useEffect} from 'react';
-import {ReactComponent as MenuImg} from './Images/BurgerMenu.svg';
-import {ReactComponent as ForumIcon} from './Images/ForumIcon.svg';
-import {ReactComponent as DonatIcon} from './Images/DonatIcon.svg';
+import {useState} from 'react';
+import {ReactComponent as MenuImg} from './images/BurgerMenu.svg';
+import {ReactComponent as ForumIcon} from './images/ForumIcon.svg';
+import {ReactComponent as DonatIcon} from './images/DonatIcon.svg';
 
-const Header = ({currentSlide}) => {
+const Header = () => {
   const [isMobileModeActive, setIsMobileModeActive] = useState(false);
-  useEffect( () => {
-    console.log(currentSlide, "currentSlide")
-  },[currentSlide])
 
   return (
-    <header 
-      className={styles.wrapper}
-      // className={styles.wrapper}
-    >
+    <header className={styles.wrapper}>
       <div className={styles.logoMenuWrapper}>
         <div 
           onClick={() => setIsMobileModeActive(prev => !prev)} 
@@ -22,7 +16,7 @@ const Header = ({currentSlide}) => {
         >
           <MenuImg/>
         </div>
-        <a className={!isMobileModeActive ? styles.logoMenuLink : styles.none} href="">
+        <a className={isMobileModeActive ? styles.none : styles.logoMenuLink} href="">
           <p>Moonlight</p>
         </a>
       </div>
@@ -30,7 +24,7 @@ const Header = ({currentSlide}) => {
         <ul className={isMobileModeActive ? styles.navigationListMobile : styles.navigationList}>
           <li className={styles.navigationItem}>
             <a className={styles.navigationItemLink} href="">
-              <div>
+              <div className={styles.navigationItemLinkSvg}>
                 <ForumIcon/>
               </div>
               <p className={styles.navigationItemLinkText}>
@@ -40,7 +34,7 @@ const Header = ({currentSlide}) => {
           </li>
           <li className={styles.navigationItem}>
             <a className={styles.navigationItemLink} href="">
-              <div>
+              <div className={styles.navigationItemLinkSvg}>
                 <DonatIcon/>
               </div>
               <p className={styles.navigationItemLinkText}>

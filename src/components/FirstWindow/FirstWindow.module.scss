@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
 
 .wrapper {
-  background-image: url("Images/MainWrapper.png");
+  background-image: url("../../images/MainWrapper.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100dvh;
@@ -27,14 +27,15 @@
       width: 100%;
     }
   }
+
   & .picturesTitle {
     position: absolute;
-    top: 37vh;
+    top: 44vh;
     left: 50%;
     transform:translate(-50%, -50%); 
     color: #FFF;
     text-shadow: 0px 0px 129.528px #419BC8, 0px 0px 259.056px #419BC8, 0px 0px 906.696px #419BC8, 0px 0px 1813.392px #419BC8, 0px 0px 3108.672px #419BC8, 0px 0px 5440.176px #419BC8;
-    font-size: 200px;
+    font-size: 300px;
     font-weight: 500;
     font-family: 'Oswald', sans-serif;
   }
@@ -42,6 +43,7 @@
   & .gunPicture {
     position: absolute;
     top: 100px;
+    left: -40px;
 
     & > img {
       width: 135%;
@@ -54,10 +56,20 @@
   top: 95dvh;
   left: 50%;
   transform:translate(-50%, -50%); 
-    
-  & svg {
-    & a {
-      cursor: pointer;
+  display: flex;
+
+  & a {
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  & a:hover {
+  
+    & svg {
+
+      & path {
+        fill: #419BC8;
+      }
     }
   }
 }
@@ -65,105 +77,101 @@
 @media (min-width: $tablet) {
   
   .wrapper{
-  
-    & .dogPicture {
-      // display: flex;
-      // position: absolute;
-      // top: 10px;
-      // left: 45px;
-  
-      & img {
 
-      }
-    }
-  
-    & .batPricture {
-      // display: flex;
-      // position: absolute;
-      // top: 10px;
-      // right: 50px;
-  
-      & img {
-
-      }
-    }
     & .picturesTitle {
-      // position: absolute;
-      // top: 37vh;
-      // left: 50%;
-      // transform:translate(-50%, -50%);   
-      // color: #FFF;
-      // text-shadow: 0px 0px 129.528px #419BC8, 0px 0px 259.056px #419BC8, 0px 0px 906.696px #419BC8, 0px 0px 1813.392px #419BC8, 0px 0px 3108.672px #419BC8, 0px 0px 5440.176px #419BC8;
-      // font-size: 400px;
-      // font-weight: 500;
+      top: 35vh;
+      font-size: 190px;
     }
   
     & .gunPicture {
-      // position: absolute;
-      // left: 34%;
-      // top: -72px;
-  
+      top: 95px;
+      left: 0;
+
       & > img {
-        // width: 100%;
+        width: 140%;
       }
     }
   }
   
   .footer {
 
+    & a {
+      padding: 10px 20px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: 40px;
+        height: 45px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 52px;
+        height: 40px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 35px;
+        height: 40px;
+      }
+    }
   }
 }
 
 @media (min-width: $tablet-max) {
 
-  
   .wrapper {
-  
-    & .dogPicture {
-      // display: flex;
-      // position: absolute;
-      // top: 10px;
-      // left: 45px;
-  
-      & img {
 
-      }
-    }
-  
-    & .batPricture {
-      // display: flex;
-      // position: absolute;
-      // top: 10px;
-      // right: 50px;
-  
-      & img {
-
-      }
-    }
     & .picturesTitle {
-      // position: absolute;
-      // top: 37vh;
-      // left: 50%;
-      // transform:translate(-50%, -50%);   
-      // color: #FFF;
-      // text-shadow: 0px 0px 129.528px #419BC8, 0px 0px 259.056px #419BC8, 0px 0px 906.696px #419BC8, 0px 0px 1813.392px #419BC8, 0px 0px 3108.672px #419BC8, 0px 0px 5440.176px #419BC8;
-      // font-size: 400px;
-      // font-weight: 500;
+      font-size: 250px;
     }
   
     & .gunPicture {
-      // position: absolute;
-      // left: 34%;
-      // top: -72px;
+      top: 120px;
+      left: -30px;
   
       & > img {
-        width: 170%;
+        width: 200%;
       }
     }
   }
   
   .footer {
 
+    & a {
+      padding: 15px 25px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 72px;
+        height: 60px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
   }
 }
 
@@ -194,17 +202,10 @@
         width: 32%;
       }
     }
+
     & .picturesTitle {
       top: 50vh;
-      font-size: 300px;
-      // position: absolute;
-      // top: 37vh;
-      // left: 50%;
-      // transform:translate(-50%, -50%);   
-      // color: #FFF;
-      // text-shadow: 0px 0px 129.528px #419BC8, 0px 0px 259.056px #419BC8, 0px 0px 906.696px #419BC8, 0px 0px 1813.392px #419BC8, 0px 0px 3108.672px #419BC8, 0px 0px 5440.176px #419BC8;
-      // font-size: 400px;
-      // font-weight: 500;
+      font-size: 250px;
     }
   
     & .gunPicture {
@@ -221,16 +222,42 @@
   
   .footer {
 
+    & a {
+      padding: 10px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: auto;
+        height: auto;
+      }
+    }
   }
 }
 
-@media (min-width: $desktop-big) {
+@media (min-width: $desktop-1600) {
   
   .wrapper {
   
     & .dogPicture {
       display: flex;
-      // position: absolute;
       top: 12vh;
       left: 8%;
   
@@ -241,7 +268,6 @@
   
     & .batPricture {
       display: flex;
-      // position: absolute;
       top: 12vh;
       left: 54%;
   
@@ -249,84 +275,134 @@
         width: 35.5%;
       }
     }
+
     & .picturesTitle {
-      // position: absolute;
-      // top: 37vh;
-      // left: 50%;
-      // transform:translate(-50%, -50%);   
-      // color: #FFF;
-      // text-shadow: 0px 0px 129.528px #419BC8, 0px 0px 259.056px #419BC8, 0px 0px 906.696px #419BC8, 0px 0px 1813.392px #419BC8, 0px 0px 3108.672px #419BC8, 0px 0px 5440.176px #419BC8;
       font-size: 400px;
-      // font-weight: 500;
     }
   
     & .gunPicture {
-      // position: absolute;
-      // left: 34%;
-      // top: -72px;
       top: 6vh;
       left: 35%;
   
       & > img {
-        // width: 100%;
         width: 36%;
       }
     }
   }
+}
+
+@media (min-width: $desktop-2560) {
+  
+  .wrapper {
+
+    & .picturesTitle {
+      font-size: 520px;
+    }
+  }
   
   .footer {
 
+    & a {
+      padding: 10px 20px;
+    }
+  
+    & .discordLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 72px;
+        height: 60px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 55px;
+        height: 60px;
+      }
+    }
   }
 }
 
-@media (min-width: $desktop-max) {
+@media (min-width: $desktop-3200) {
   
   .wrapper {
-  
-    & .dogPicture {
-      display: flex;
-      // position: absolute;
-      // top: 10px;
-      // left: 45px;
-  
-      & img {
 
-      }
-    }
-  
-    & .batPricture {
-      display: flex;
-      // position: absolute;
-      // top: 10px;
-      // right: 50px;
-  
-      & img {
-
-      }
-    }
     & .picturesTitle {
-      // position: absolute;
-      // top: 37vh;
-      // left: 50%;
-      // transform:translate(-50%, -50%);   
-      // color: #FFF;
-      // text-shadow: 0px 0px 129.528px #419BC8, 0px 0px 259.056px #419BC8, 0px 0px 906.696px #419BC8, 0px 0px 1813.392px #419BC8, 0px 0px 3108.672px #419BC8, 0px 0px 5440.176px #419BC8;
-      // font-size: 400px;
-      // font-weight: 500;
+      font-size: 650px;
     }
+  }
   
-    & .gunPicture {
-      // position: absolute;
-      // left: 34%;
-      // top: -72px;
-  
-      & > img {
-        // width: 100%;
+  .footer {
+    top: 96dvh;
+
+    & .discordLink {
+
+      & svg {
+        width: 65px;
+        height: 70px;
       }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 82px;
+        height: 70px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 65px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-3840) {
+  
+  .wrapper {
+
+    & .picturesTitle {
+      font-size: 780px;
     }
   }
   
   .footer {
 
+    & .discordLink {
+
+      & svg {
+        width: 75px;
+        height: 80px;
+      }
+    }
+
+    & .youTubeLink {
+        
+      & svg {
+        width: 92px;
+        height: 80px;
+      }
+    }
+
+    & .tikTokLink {
+
+      & svg {
+        width: 75px;
+        height: 80px;
+      }
+    }
   }
 }

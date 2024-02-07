@@ -1,5 +1,5 @@
 import './styles/styles.scss';
-import React, {useState} from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -10,11 +10,10 @@ import ThirdWindow from './components/ThirdWindow/ThirdWindow';
 import Header from './components/Header/Header';
 
 function App() {
-  const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
     <div className="wrapper">
-      <Header currentSlide={currentSlide}/>
+      <Header/>
       <Swiper
         direction={'vertical'}
         slidesPerView={1}
@@ -27,7 +26,6 @@ function App() {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         scrollbar={{ draggable: true }}
         className="mySwiper"
-        onSlideChange={(swiper) => setCurrentSlide(swiper.activeIndex)}
       >
         <SwiperSlide>
           <FirstWindow/>

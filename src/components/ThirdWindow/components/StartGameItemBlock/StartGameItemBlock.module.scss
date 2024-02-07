@@ -1,0 +1,151 @@
+@import '../../../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+.stepBlock {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+
+  & h2 {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+
+    & .stepQuantity {
+      color: #419BC8;
+      margin-left: 15px;
+    }
+  }
+
+  & .imagesWrapper {
+      
+  }
+}
+
+.text {
+  margin: 0 30px 40px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+}
+
+.action {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 7px;
+  background: #11273B;
+  font-weight: 600;
+  font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: $tablet) { 
+
+  .text {
+    margin: 0 30px 80px;
+
+  }
+}
+
+@media (min-width: $desktop) { 
+
+  .stepBlock {
+    margin: 20px;
+  }
+
+  .text {
+    margin: 0 20px 80px;
+    height: 100%;
+  }
+}
+
+@media (min-width: $desktop-1600) { 
+
+  .stepBlock {
+    margin: 20px 30px;
+  }
+
+  .text {
+    margin: 0 20px 100px;
+  }
+}
+
+@media (min-width: $desktop-1920) { 
+
+  .text {
+    margin: 0 20px 150px;
+  }
+}
+
+@media (min-width: $desktop-2560) { 
+
+  .stepBlock {
+    margin: 40px 60px;
+  
+    & h2 {
+      font-size: 55px;
+    }
+  
+    & .imagesWrapper {
+      
+    }
+  }
+  .text {
+    margin: 0 60px 200px;
+    font-size: 25px;
+  }
+
+  .action {
+    padding: 30px;
+    font-size: 47px;
+  }
+}
+
+@media (min-width: $desktop-3200) { 
+
+  .stepBlock {
+    margin: 45px 70px;
+  
+    & h2 {
+      font-size: 60px;
+    }
+  
+    & .imagesWrapper {
+      
+    }
+  }
+  
+  .text {
+    margin: 0 70px 300px;
+    font-size: 30px;
+  }
+
+  .action {
+    padding: 34px;
+    font-size: 52px;
+  }
+}
+
+@media (min-width: $desktop-3840) { 
+
+  .stepBlock {
+    margin: 50px 80px;
+  
+    & h2 {
+      font-size: 65px;
+    }
+  
+    & .imagesWrapper {
+      
+    }
+  }
+  .text {
+    margin: 0 80px 400px;
+    font-size: 35px;
+  }
+
+  .action {
+    padding: 38px;
+    font-size: 55px;
+  }
+}
