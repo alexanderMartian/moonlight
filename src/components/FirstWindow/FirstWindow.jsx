@@ -1,7 +1,7 @@
 import styles from './FirstWindow.module.scss';
-import MainPicturesWithDog from './Images/MainPicturesWithDog.png';
-import MainPicturesWithBita from './Images/MainPicturesWithBita.png';
-import MainPicturesWithGun from './Images/MainPicturesWithGun.png';
+import MainPicturesWithDog from './Images/MainPicturesWithDog.webp';
+import MainPicturesWithBita from './Images/MainPicturesWithBita.webp';
+import MainPicturesWithGun from './Images/MainPicturesWithGun.webp';
 import {ReactComponent as DiscordIcon} from './Images/discord.svg';
 import {ReactComponent as YoutubeIcon} from './Images/youtube.svg';
 import {ReactComponent as TiktokIcon} from './Images/tiktok.svg';
