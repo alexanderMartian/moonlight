@@ -1,39 +1,37 @@
 @import '../../../../styles/variables.scss';
+@import '../../../../styles/functions.scss';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
 
 .stepBlock {
   display: flex;
   justify-content: space-between;
-  margin: 20px 30px;
+  margin: pxToRem(20px) pxToRem(30px);
 
   & h2 {
-    font-size: 46px;
+    font-size: pxToRem(46px);
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
 
     & .stepQuantity {
       color: #419BC8;
-      margin-left: 15px;
+      margin-left: pxToRem(15px);
     }
-  }
-
-  & .imagesWrapper {
-      
   }
 }
 
 .text {
-  margin: 0 30px 40px;
-  font-size: 20px;
+  margin: 0 pxToRem(30px) pxToRem(40px);
+  font-size: pxToRem(20px);
+  line-height: pxToRem(20px);
   font-weight: 400;
   font-family: 'Oswald', sans-serif;
 }
 
 .action {
-  padding: 20px;
+  padding: pxToRem(20px);
   text-align: center;
-  font-size: 40px;
-  border-radius: 7px;
+  font-size: pxToRem(40px);
+  border-radius: pxToRem(7px);
   background: #11273B;
   font-weight: 600;
   font-family: 'Oswald', sans-serif;
@@ -42,110 +40,106 @@
 @media (min-width: $tablet) { 
 
   .text {
-    margin: 0 30px 80px;
-
+    margin: 0 pxToRem(30px) pxToRem(80px);
+    line-height: pxToRem(24px);
   }
 }
 
 @media (min-width: $desktop) { 
 
   .stepBlock {
-    margin: 20px;
+    margin: pxToRem(20px);
   }
 
   .text {
-    margin: 0 20px 80px;
+    margin: 0 pxToRem(20px) pxToRem(80px);
     height: 100%;
+    line-height: pxToRem(26px);
   }
 }
 
 @media (min-width: $desktop-1600) { 
 
   .stepBlock {
-    margin: 20px 30px;
+    margin: pxToRem(20px) pxToRem(30px);
   }
 
   .text {
-    margin: 0 20px 100px;
+    margin: 0 pxToRem(20px) pxToRem(100px);
+    line-height: pxToRem(28px);
   }
 }
 
 @media (min-width: $desktop-1920) { 
 
   .text {
-    margin: 0 20px 150px;
+    margin: 0 pxToRem(20px) pxToRem(150px);
+    line-height: pxToRem(30px);
   }
 }
 
 @media (min-width: $desktop-2560) { 
 
   .stepBlock {
-    margin: 40px 60px;
+    margin: pxToRem(40px) pxToRem(60px);
   
     & h2 {
-      font-size: 55px;
-    }
-  
-    & .imagesWrapper {
-      
+      font-size: pxToRem(55px);
     }
   }
+
   .text {
-    margin: 0 60px 200px;
-    font-size: 25px;
+    margin: 0 pxToRem(60px) pxToRem(200px);
+    font-size: pxToRem(25px);
+    line-height: pxToRem(32px);
   }
 
   .action {
-    padding: 30px;
-    font-size: 47px;
+    padding: pxToRem(30px);
+    font-size: pxToRem(47px);
   }
 }
 
 @media (min-width: $desktop-3200) { 
 
   .stepBlock {
-    margin: 45px 70px;
+    margin: pxToRem(45px) pxToRem(70px);
   
     & h2 {
-      font-size: 60px;
-    }
-  
-    & .imagesWrapper {
-      
+      font-size: pxToRem(60px);
     }
   }
   
   .text {
-    margin: 0 70px 300px;
-    font-size: 30px;
+    margin: 0 pxToRem(70px) pxToRem(300px);
+    font-size: pxToRem(30px);
+    line-height: pxToRem(34px);
   }
 
   .action {
-    padding: 34px;
-    font-size: 52px;
+    padding: pxToRem(34px);
+    font-size: pxToRem(52px);
   }
 }
 
 @media (min-width: $desktop-3840) { 
 
   .stepBlock {
-    margin: 50px 80px;
+    margin: pxToRem(50px) pxToRem(80px);
   
     & h2 {
-      font-size: 65px;
-    }
-  
-    & .imagesWrapper {
-      
+      font-size: pxToRem(65px);
     }
   }
+
   .text {
-    margin: 0 80px 400px;
-    font-size: 35px;
+    margin: 0 pxToRem(80px) pxToRem(400px);
+    font-size: pxToRem(35px);
+    line-height: pxToRem(36px);
   }
 
   .action {
-    padding: 38px;
-    font-size: 55px;
+    padding: pxToRem(38px);
+    font-size: pxToRem(55px);
   }
 }

@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/functions.scss';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
 
 .wrapper {
@@ -35,15 +36,15 @@
     transform:translate(-50%, -50%); 
     color: #FFF;
     text-shadow: 0px 0px 129.528px #419BC8, 0px 0px 259.056px #419BC8, 0px 0px 906.696px #419BC8, 0px 0px 1813.392px #419BC8, 0px 0px 3108.672px #419BC8, 0px 0px 5440.176px #419BC8;
-    font-size: 300px;
+    font-size: pxToRem(300px);
     font-weight: 500;
     font-family: 'Oswald', sans-serif;
   }
 
   & .gunPicture {
     position: absolute;
-    top: 100px;
-    left: -40px;
+    top: pxToRem(100px);
+    left: pxToRem(-40px);
 
     & > img {
       width: 135%;
@@ -60,7 +61,7 @@
 
   & a {
     cursor: pointer;
-    padding: 10px;
+    padding: pxToRem(10px);
   }
 
   & a:hover {
@@ -80,11 +81,11 @@
 
     & .picturesTitle {
       top: 35vh;
-      font-size: 190px;
+      font-size: pxToRem(190px);
     }
   
     & .gunPicture {
-      top: 95px;
+      top: pxToRem(95px);
       left: 0;
 
       & > img {
@@ -96,7 +97,7 @@
   .footer {
 
     & a {
-      padding: 10px 20px;
+      padding: pxToRem(10px) pxToRem(20px);
     }
   
     & .discordLink {
@@ -130,12 +131,12 @@
   .wrapper {
 
     & .picturesTitle {
-      font-size: 250px;
+      font-size: pxToRem(250px);
     }
   
     & .gunPicture {
-      top: 120px;
-      left: -30px;
+      top: pxToRem(120px);
+      left: pxToRem(-30px);
   
       & > img {
         width: 200%;
@@ -146,7 +147,7 @@
   .footer {
 
     & a {
-      padding: 15px 25px;
+      padding: pxToRem(15px) pxToRem(25px);
     }
   
     & .discordLink {
@@ -205,7 +206,7 @@
 
     & .picturesTitle {
       top: 50vh;
-      font-size: 250px;
+      font-size: pxToRem(250px);
     }
   
     & .gunPicture {
@@ -223,7 +224,7 @@
   .footer {
 
     & a {
-      padding: 10px;
+      padding: pxToRem(10px);
     }
   
     & .discordLink {
@@ -277,7 +278,7 @@
     }
 
     & .picturesTitle {
-      font-size: 400px;
+      font-size: pxToRem(400px);
     }
   
     & .gunPicture {
@@ -296,14 +297,14 @@
   .wrapper {
 
     & .picturesTitle {
-      font-size: 520px;
+      font-size: pxToRem(520px);
     }
   }
   
   .footer {
 
     & a {
-      padding: 10px 20px;
+      padding: pxToRem(10px) pxToRem(20px);
     }
   
     & .discordLink {
@@ -337,7 +338,7 @@
   .wrapper {
 
     & .picturesTitle {
-      font-size: 650px;
+      font-size: pxToRem(650px);
     }
   }
   
@@ -375,7 +376,7 @@
   .wrapper {
 
     & .picturesTitle {
-      font-size: 780px;
+      font-size: pxToRem(780px);
     }
   }
   

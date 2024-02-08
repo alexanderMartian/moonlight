@@ -9,7 +9,7 @@ const StartGameItemBlock = ({step, text, action, img}) => {
           Крок 
           <span className={styles.stepQuantity}>{step}</span>
         </h2>
-        <div className={styles.imagesWrapper}>
+        <div>
           {img}
         </div>
       </div>
