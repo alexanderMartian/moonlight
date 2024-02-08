@@ -1,6 +1,6 @@
 import styles from './FirstWindow.module.scss';
 import MainPicturesWithDog from './Images/MainPicturesWithDog.webp';
-import MainPicturesWithBita from './Images/MainPicturesWithBita.webp';
+import MainPicturesWithBat from './Images/MainPicturesWithBat.webp';
 import MainPicturesWithGun from './Images/MainPicturesWithGun.webp';
 import {ReactComponent as DiscordIcon} from './Images/discord.svg';
 import {ReactComponent as YoutubeIcon} from './Images/youtube.svg';
@@ -14,7 +14,7 @@ const FirstWindow = () => {
           <img src={MainPicturesWithDog} alt="MainPicturesWithDog"/>
       </div>
       <div className={styles.batPricture}>
-          <img src={MainPicturesWithBita} alt="MainPicturesWithBita"/>
+          <img src={MainPicturesWithBat} alt="MainPicturesWithBat"/>
       </div>
       <h1 className={styles.picturesTitle}>Moonlight</h1>
       <div className={styles.gunPicture}>
