@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/functions.scss';
 
 .mainWrapper {
   background-image: url("Images/MainWrapper.webp");
@@ -16,7 +17,7 @@
 
   & .videoItem {
     width: 80vw;
-    border-radius: 30px;
+    border-radius: pxToRem(30px);
   }
 }
 
@@ -29,10 +30,10 @@
       width: 80vw;
     }
   }
-
 }
 
 @media (min-width: $desktop) {
+  
   .videoWrapper {
     top: 55%;
   

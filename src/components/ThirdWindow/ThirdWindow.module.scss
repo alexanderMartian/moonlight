@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/functions.scss';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Oswald:wght@500;600;700&display=swap');
 
@@ -16,16 +17,16 @@
 .stepsWrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 15px;
+  margin: 0 pxToRem(15px);
 }
 
 .startGameBlock {
-  margin: 120px 15px 40px;
+  margin: pxToRem(120px) pxToRem(15px) pxToRem(40px);
 
   & > h1 {
     color: #FFF;
     text-align: center;
-    font-size: 40px;
+    font-size: pxToRem(40px);
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
   }
@@ -35,7 +36,8 @@
     
     & > p {
       color: #FFF;
-      font-size: 20px;
+      font-size: pxToRem(20px);
+      line-height: pxToRem(20px);
       font-family: 'Nunito', sans-serif;
       font-weight: 400;
     }
@@ -43,20 +45,21 @@
 }
 
 .footer {
-  margin: 20px 15px;
+  margin: pxToRem(20px) pxToRem(15px);
   color: rgba(255, 255, 255, 0.50);
 
   & .footerText {
-    font-size: 13px;
+    font-size: pxToRem(13px);
+    line-height: pxToRem(20px);
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: pxToRem(10px);
   }
 
   & a {
     
     & .emailText {
-      font-size: 16px;
+      font-size: pxToRem(16px);
       color: rgba(255, 255, 255, 0.50);
       font-family: 'Oswald', sans-serif;
       font-weight: 300;
@@ -71,14 +74,14 @@
 @media (min-width: $tablet) { 
   
   .stepsWrapper {
-    margin: 0 60px;
+    margin: 0 pxToRem(60px);
   }
   
   .startGameBlock {
-    margin: 120px 0 40px;
+    margin: pxToRem(120px) 0 pxToRem(40px);
   
     & > h1 {
-      margin-bottom: 25px;
+      margin-bottom: pxToRem(25px);
     }
   
     & > div {
@@ -88,6 +91,7 @@
       & > p {
         width: 82%;
         text-align: center;
+        line-height: pxToRem(22px);
       }
     }
   }
@@ -96,7 +100,7 @@
     display: flex;
     justify-content: space-between;
     align-items: self-end;
-    margin: 35px 60px;
+    margin: pxToRem(35px) pxToRem(60px);
   
     & .footerText  {
       width: 50%;
@@ -110,22 +114,23 @@
   .stepsWrapper {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 100px;
+    margin: 0 pxToRem(100px);
   }
   
   .startGameBlock {
-    margin: 120px 0 60px;
+    margin: pxToRem(120px) 0 pxToRem(60px);
   
     & > div {
     
       & > p {
         width: 70%;
+        line-height: pxToRem(24px);
       }
     }
   }
 
   .footer {
-    margin: 35px 100px;
+    margin: pxToRem(35px) pxToRem(100px);
 
     & .footerText  {
       width: 30%;
@@ -136,7 +141,7 @@
 @media (min-width: $desktop-1600) { 
   
   .stepsWrapper {
-    margin: 0 200px;
+    margin: 0 pxToRem(200px);
   }
   
   .startGameBlock {
@@ -145,19 +150,20 @@
     
       & > p {
         width: 55%;
+        line-height: pxToRem(25px);
       }
     }
   }
 
   .footer {
-    margin: 35px 40px;
+    margin: pxToRem(35px) pxToRem(40px);
   }
 }
 
 @media (min-width: $desktop-1920) { 
   
   .stepsWrapper {
-    margin: 0 250px;
+    margin: 0 pxToRem(250px);
   }
   
   .startGameBlock {
@@ -166,6 +172,7 @@
     
       & > p {
         width: 45%;
+        line-height: pxToRem(27px);
       }
     }
   }
@@ -173,13 +180,13 @@
   .footer {
 
     & .footerText  {
-      font-size: 16px;
+      font-size: pxToRem(16px);
     }
   
     & a {
     
       & .emailText {
-        font-size: 19px;
+        font-size: pxToRem(19px);
       }
     }
   }
@@ -188,36 +195,38 @@
 @media (min-width: $desktop-2560) { 
   
   .stepsWrapper {
-    margin: 0 400px;
+    margin: 0 pxToRem(400px);
   }
   
   .startGameBlock {
-    margin: 200px 0 40px;
+    margin: pxToRem(200px) 0 pxToRem(40px);
   
     & > h1 {
-      font-size: 60px;
-      margin-bottom: 50px;
+      font-size: pxToRem(60px);
+      margin-bottom: pxToRem(50px);
     }
   
     & > div {
     
       & > p {
-        font-size: 25px;
+        font-size: pxToRem(25px);
+        line-height: pxToRem(29px);
       }
     }
   }
   
   .footer {
-    margin: 45px 80px;
+    margin: pxToRem(45px) pxToRem(80px);
 
     & .footerText  {
-      font-size: 19px;
+      font-size: pxToRem(19px);
+      line-height: pxToRem(24px);
     }
   
     & a {
     
       & .emailText {
-        font-size: 22px;
+        font-size: pxToRem(22px);
       }
     }
   }
@@ -226,35 +235,37 @@
 @media (min-width: $desktop-3200) { 
   
   .stepsWrapper {
-    margin: 0 500px;
+    margin: 0 pxToRem(500px);
   }
   
   .startGameBlock {
-    margin: 240px 0 40px;
+    margin: pxToRem(240px) 0 pxToRem(40px);
   
     & > h1 {
-      font-size: 70px;
+      font-size: pxToRem(70px);
     }
   
     & > div {
     
       & > p {
-        font-size: 30px;
+        font-size: pxToRem(30px);
+        line-height: pxToRem(31px);
       }
     }
   }
   
   .footer {
-    margin: 55px 100px;
+    margin: pxToRem(55px) pxToRem(100px);
 
     & .footerText  {
-      font-size: 22px;
+      font-size: pxToRem(22px);
+      line-height: pxToRem(27px);
     }
   
     & a {
     
       & .emailText {
-        font-size: 25px;
+        font-size: pxToRem(25px);
       }
     }
   }
@@ -263,35 +274,37 @@
 @media (min-width: $desktop-3840) { 
   
   .stepsWrapper {
-    margin: 0 700px;
+    margin: 0 pxToRem(700px);
   }
   
   .startGameBlock {
-    margin: 290px 0 40px;
+    margin: pxToRem(290px) 0 pxToRem(40px);
   
     & > h1 {
-      font-size: 80px;
+      font-size: pxToRem(80px);
     }
   
     & > div {
     
       & > p {
-        font-size: 35px;
+        font-size: pxToRem(35px);
+        line-height: pxToRem(33px);
       }
     }
   }
   
   .footer {
-    margin: 65px 120px;
+    margin: pxToRem(65px) pxToRem(120px);
 
     & .footerText  {
-      font-size: 25px;
+      font-size: pxToRem(25px);
+      line-height: pxToRem(29px);
     }
   
     & a {
     
       & .emailText {
-        font-size: 28px;
+        font-size: pxToRem(28px);
       }
     }
   }
