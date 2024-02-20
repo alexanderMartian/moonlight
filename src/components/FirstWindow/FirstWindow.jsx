@@ -10,10 +10,16 @@ const FirstWindow = () => {
 
   return (
     <main className={styles.wrapper}>
-
-
+      <div className={styles.dogPicture}>
+          <img src={MainPicturesWithDog} alt="MainPicturesWithDog"/>
+      </div>
+      <div className={styles.batPricture}>
+          <img src={MainPicturesWithBat} alt="MainPicturesWithBat"/>
+      </div>
       <h1 className={styles.picturesTitle}>Moonlight</h1>
-
+      <div className={styles.gunPicture}>
+        <img src={MainPicturesWithGun} alt="MainPicturesWithGun"/>
+      </div>
       <footer className={styles.footer}>
         <a 
           className={styles.discordLink}
