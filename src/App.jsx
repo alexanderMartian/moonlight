@@ -28,15 +28,13 @@ function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-          {/* <FirstWindow/> */}
-          <SecondWindow/>
+        <ThirdWindow/>
         </SwiperSlide>
         <SwiperSlide>
-          <SecondWindow/>
+        <ThirdWindow/>
         </SwiperSlide>
         <SwiperSlide>
-          {/* <ThirdWindow/> */}
-          <SecondWindow/>
+          <ThirdWindow/>
         </SwiperSlide>
       </Swiper>
     </div>
